@@ -1,0 +1,9 @@
+# HVAC Zone Inc - crawler rules
+# OpenAI: allow ChatGPT search (OAI-SearchBot); opt out of foundation-model training (GPTBot).
+# Reference: https://developers.openai.com/api/docs/bots
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
