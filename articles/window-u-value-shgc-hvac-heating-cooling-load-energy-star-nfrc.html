@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Window U-Value and SHGC: How Glazing Properties Drive HVAC Heating and Cooling Loads | HVAC Zone</title>
+  <meta name="description" content="Window U-value and SHGC directly determine HVAC heating and cooling loads. Optimum window design cuts energy 10-50%. ENERGY STAR Version 7.0 requires U≤0.22 in Northern zones and SHGC≤0.23 in Southern zones. Proper glazing selection can reduce equipment sizing and operating costs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height="32" rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Building</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Oct 17, 2026 · 8 min read</span>
+          </div>
+        </div>
+        <h1>Window U-Value and SHGC: How Glazing Properties Drive HVAC Heating and Cooling Loads</h1>
+        <p class="article-lead">Windows are the weakest thermal link in most building envelopes. Optimizing window U-value and Solar Heat Gain Coefficient can cut HVAC energy use 10-50% in homes and 10-40% in commercial buildings. ENERGY STAR Version 7.0 now requires U-factors as low as 0.22 in Northern zones — here's what that means for your HVAC system.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 340" role="img" aria-label="Comparison chart of glazing types showing U-factor and SHGC: single glass, double glass, double low-e, triple low-e, with ENERGY STAR Version 7.0 requirements by climate zone">
+        <rect width="800" height="340" fill="var(--color-surface-offset)"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-text)" font-weight="700">Glazing U-Factor by Type & ENERGY STAR v7.0 Requirements</text>
+        <!-- Glazing type bars (left half) -->
+        <text x="60" y="58" font-family="Inter" font-size="9" fill="var(--color-text-muted)" font-weight="600">Glazing Type</text>
+        <text x="250" y="58" font-family="Inter" font-size="9" fill="var(--color-text-muted)" font-weight="600">U-Factor (Btu/hr·ft²·°F)</text>
+        <line x1="40" y1="66" x2="400" y2="66" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <!-- Single glass -->
+        <text x="60" y="86" font-family="Inter" font-size="9" fill="var(--color-text)">Single glass</text>
+        <rect x="250" y="76" width="120" height="16" fill="var(--color-danger)" rx="2"/>
+        <text x="375" y="88" font-family="Inter" font-size="8" fill="var(--color-danger)" font-weight="600">1.07-1.30</text>
+        <!-- Double glass -->
+        <text x="60" y="110" font-family="Inter" font-size="9" fill="var(--color-text)">Double glass, 1/2" air</text>
+        <rect x="250" y="100" width="56" height="16" fill="var(--color-warm)" rx="2"/>
+        <text x="312" y="112" font-family="Inter" font-size="8" fill="var(--color-warm)" font-weight="600">0.48-0.62</text>
+        <!-- Double low-e -->
+        <text x="60" y="134" font-family="Inter" font-size="9" fill="var(--color-text)">Double low-e, e=0.20</text>
+        <rect x="250" y="124" width="36" height="16" fill="var(--color-success)" rx="2"/>
+        <text x="292" y="136" font-family="Inter" font-size="8" fill="var(--color-success)" font-weight="600">0.39</text>
+        <!-- Double low-e e=0.10 -->
+        <text x="60" y="158" font-family="Inter" font-size="9" fill="var(--color-text)">Double low-e, e=0.10</text>
+        <rect x="250" y="148" width="28" height="16" fill="var(--color-success)" rx="2"/>
+        <text x="284" y="160" font-family="Inter" font-size="8" fill="var(--color-success)" font-weight="600">~0.30</text>
+        <!-- Triple low-e -->
+        <text x="60" y="182" font-family="Inter" font-size="9" fill="var(--color-text)">Triple low-e, argon</text>
+        <rect x="250" y="172" width="18" height="16" fill="var(--color-success)" rx="2"/>
+        <text x="274" y="184" font-family="Inter" font-size="8" fill="var(--color-success)" font-weight="600">~0.15-0.20</text>
+        <!-- ENERGY STAR v7.0 (right half) -->
+        <line x1="420" y1="50" x2="420" y2="320" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="440" y="58" font-family="Inter" font-size="9" fill="var(--color-text-muted)" font-weight="600">ENERGY STAR v7.0 by Zone</text>
+        <line x1="420" y1="66" x2="780" y2="66" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <!-- Northern -->
+        <text x="440" y="86" font-family="Inter" font-size="9" fill="var(--color-text)">Northern</text>
+        <text x="780" y="86" text-anchor="end" font-family="Inter" font-size="9" fill="var(--color-primary)" font-weight="600">U ≤ 0.22 · SHGC ≥ 0.17</text>
+        <line x1="440" y1="94" x2="780" y2="94" stroke="var(--color-text-muted)" stroke-width="0.3" opacity="0.2"/>
+        <!-- North-Central -->
+        <text x="440" y="110" font-family="Inter" font-size="9" fill="var(--color-text)">North-Central</text>
+        <text x="780" y="110" text-anchor="end" font-family="Inter" font-size="9" fill="var(--color-primary)" font-weight="600">U ≤ 0.25 · SHGC ≤ 0.40</text>
+        <line x1="440" y1="118" x2="780" y2="118" stroke="var(--color-text-muted)" stroke-width="0.3" opacity="0.2"/>
+        <!-- South-Central -->
+        <text x="440" y="134" font-family="Inter" font-size="9" fill="var(--color-text)">South-Central</text>
+        <text x="780" y="134" text-anchor="end" font-family="Inter" font-size="9" fill="var(--color-primary)" font-weight="600">U ≤ 0.28 · SHGC ≤ 0.23</text>
+        <line x1="440" y1="142" x2="780" y2="142" stroke="var(--color-text-muted)" stroke-width="0.3" opacity="0.2"/>
+        <!-- Southern -->
+        <text x="440" y="158" font-family="Inter" font-size="9" fill="var(--color-text)">Southern</text>
+        <text x="780" y="158" text-anchor="end" font-family="Inter" font-size="9" fill="var(--color-primary)" font-weight="600">U ≤ 0.32 · SHGC ≤ 0.23</text>
+        <!-- Notes -->
+        <text x="60" y="220" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Lower U-factor = less heat loss (better insulation). Lower SHGC = less solar heat gain (better for cooling).</text>
+        <text x="60" y="240" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Northern zone allows higher SHGC (≥0.17) for beneficial winter solar gain. Southern zone requires low SHGC (≤0.23).</text>
+        <text x="60" y="270" font-family="Inter" font-size="8" fill="var(--color-primary)" font-weight="600">Sources: DOE, ENERGY STAR v7.0, WBDG, NIST, LBNL</text>
+        <text x="60" y="300" font-family="Inter" font-size="8" fill="var(--color-success)" font-weight="600">Optimum window design: 10-50% energy reduction (residential), 10-40% (commercial HVAC+lighting)</text>
+      </svg>
+      <figcaption>Glazing U-factors range from 1.07 (single glass) to 0.15 (triple low-e). ENERGY STAR Version 7.0 requires U≤0.22 in the Northern zone and SHGC≤0.23 in Southern zones. Optimizing glazing can reduce HVAC energy use 10-50% in residential buildings.</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>Two numbers on every NFRC-certified window label — U-factor and Solar Heat Gain Coefficient (SHGC) — directly determine how much heating and cooling your HVAC system must produce. The Whole Building Design Guide reports that optimum window design can reduce energy consumption 10-50% below accepted practice in residential buildings, and 10-40% in commercial buildings where lighting and HVAC costs are intertwined ([WBDG](https://legacy.wbdg.org/resources/windows-and-glazing)). Understanding these properties is essential for anyone sizing HVAC equipment or evaluating building envelope upgrades.</p>
+
+        <h2>U-factor: the insulation rating</h2>
+        <p>U-factor measures the rate of heat flow through a window due to conduction, convection, and radiation, expressed in Btu/hr·ft²·°F. A window with a U-factor of 0.6 will lose twice as much heat under the same conditions as one rated at 0.3. DOE notes that U-factors for windows generally range from 0.20 to 1.20, with lower values indicating better insulation. The reciprocal of U-factor is the more familiar R-value ([DOE](https://www.energy.gov/sites/prod/files/guide_to_energy_efficient_windows.pdf), [NIST](https://www.nist.gov/system/files/documents/2017/05/09/254_energy_implications_for_glass_in_the_built_environment.pdf)).</p>
+        <p>Glazing type dramatically affects U-factor. DOE data shows single glass at 1.07-1.30, double glass with a 1/2-inch air space at 0.48-0.62, double glass with a low-e coating (e=0.20) at 0.39, and double glass with a lower-emissivity coating (e=0.10) even lower. Triple-glazed low-e windows with argon fill can reach 0.15-0.20. DOE recommends a window U-factor of 0.5 or lower, preferably below 0.4, for maximum energy savings ([DOE/NASCSP](https://nascsp.org/wp-content/uploads/2018/02/us-doe_selecting-windows-for-energy-efficiency.pdf)).</p>
+
+        <table class="compare-table">
+          <thead><tr><th>Glazing Type</th><th>U-Factor</th><th>Typical SHGC</th><th>HVAC Impact</th></tr></thead>
+          <tbody>
+            <tr><td>Single glass</td><td>1.07-1.30</td><td>0.75-0.86</td><td>High heat loss, high solar gain</td></tr>
+            <tr><td>Double glass, air fill</td><td>0.48-0.62</td><td>0.60-0.70</td><td>Moderate heat loss</td></tr>
+            <tr><td>Double low-e, argon</td><td>0.30-0.39</td><td>0.25-0.45</td><td>Low heat loss, controlled solar gain</td></tr>
+            <tr><td>Triple low-e, argon</td><td>0.15-0.20</td><td>0.20-0.40</td><td>Very low heat loss, low solar gain</td></tr>
+          </tbody>
+        </table>
+
+        <h2>SHGC: the solar heat gate</h2>
+        <p>Solar Heat Gain Coefficient measures the fraction of incident solar radiation that enters a building through the window, expressed as a number between 0 and 1. A window with an SHGC of 0.6 admits twice as much solar heat as one rated at 0.3. The strategic question for HVAC design is climate-dependent: in heating-dominated climates, high SHGC on south-facing windows provides free passive solar heat that reduces furnace runtime. In cooling-dominated climates, low SHGC reduces the air-conditioning load that peaks during sunny afternoons ([WBDG](https://legacy.wbdg.org/resources/windows-and-glazing), [DOE/NASCSP](https://nascsp.org/wp-content/uploads/2018/02/us-doe_selecting-windows-for-energy-efficiency.pdf)).</p>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Whole-product vs. glass-only ratings.</b>The WBDG warns that "glass-only" U-factors can be 10% to 40% better than the whole-product value that includes the frame, sash, and spacer. Always specify and compare whole-product NFRC ratings. A window advertised with a center-of-glass U-factor of 0.28 may have a whole-product U-factor of 0.35 or higher when the frame is included — a difference that affects Manual J load calculations and equipment sizing ([WBDG](https://legacy.wbdg.org/resources/windows-and-glazing)).</p>
+        </div>
+
+        <h2>ENERGY STAR Version 7.0 requirements by climate zone</h2>
+        <p>ENERGY STAR's current Version 7.0 specification (effective October 2023) tightened U-factor requirements across all climate zones and lowered SHGC limits in the South-Central and Southern zones. Windows must have NFRC-certified ratings and meet air leakage limits of ≤0.30 cfm/ft² ([ENERGY STAR](https://www.energystar.gov/products/res_windows_doors_skylights)).</p>
+        <table class="compare-table">
+          <thead><tr><th>Climate Zone</th><th>U-Factor</th><th>SHGC</th><th>HVAC Strategy</th></tr></thead>
+          <tbody>
+            <tr><td>Northern</td><td>≤ 0.22</td><td>≥ 0.17</td><td>Maximize insulation, allow beneficial solar gain</td></tr>
+            <tr><td>North-Central</td><td>≤ 0.25</td><td>≤ 0.40</td><td>Balanced insulation and solar control</td></tr>
+            <tr><td>South-Central</td><td>≤ 0.28</td><td>≤ 0.23</td><td>Reduce solar heat gain, maintain insulation</td></tr>
+            <tr><td>Southern</td><td>≤ 0.32</td><td>≤ 0.23</td><td>Strong solar heat blocking</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Low-e coatings and spectrally selective glazing</h2>
+        <p>Low-emissivity (low-e) coatings are the key technology enabling modern high-performance windows. By reflecting long-wave radiant heat, low-e coatings reduce U-factors — most valuable in cold climates where heating requirements are significant. "Spectrally selective" low-e coatings are tuned to reflect the solar infrared (invisible) portion of sunlight, reducing SHGC without dramatically cutting visible light. DOE's Lawrence Berkeley National Laboratory notes that in heating-dominated climates, U-factors as low as 0.10 Btu/hr·ft²·°F (0.57 W/m²·K) can make windows energy-neutral — meaning they gain as much solar heat as they lose. In mixed climates, the challenge is modulating SHGC: high in winter for free heat, low in summer to reduce cooling. Dynamic windows with variable SHGC (0.26-0.40) are under development to address this ([DOE/LBNL](https://windows.lbl.gov/sites/default/files/51913.pdf)).</p>
+
+        <h2>What this means for HVAC system design</h2>
+        <ul>
+          <li><strong>Manual J load calculations:</strong> Window U-factor and SHGC are primary inputs. Upgrading from single-pane (U=1.07) to double low-e (U=0.30) can cut the window heat loss component by 70%+.</li>
+          <li><strong>Equipment sizing:</strong> High-performance windows may allow smaller heating equipment — reducing first cost as well as operating cost.</li>
+          <li><strong>Cooling load management:</strong> Low SHGC (≤0.23) on south and west-facing windows can reduce peak cooling demand significantly, especially in afternoon hours.</li>
+          <li><strong>Perimeter heating:</strong> High-performance windows can eliminate the need for perimeter heating in commercial buildings by raising the Mean Radiant Temperature, improving occupant comfort.</li>
+          <li><strong>Orientation strategy:</strong> South-facing windows with high SHGC + low U-factor provide passive solar heating; east and west windows need low SHGC or shading to control cooling loads.</li>
+          <li><strong>Retrofit payback:</strong> DOE estimates ENERGY STAR window savings of $71-$501 annually, depending on climate and existing window condition ([DOE](https://www.energy.gov/sites/prod/files/guide_to_energy_efficient_windows.pdf)).</li>
+        </ul>
+
+        <p><em>Naming a product or manufacturer in this article is for identification purposes only and does not constitute an endorsement by HVAC Zone Inc. We are a multi-brand dealer and remain neutral on brand preference.</em></p>
+
+        <p>Planning a window upgrade or HVAC system replacement? <a href="../index.html#contact">Request a consultation</a> — we evaluate your window U-factors, SHGC, orientation, and HVAC load calculations to recommend the right equipment sizing for your building envelope.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Building</span><span class="tag">Windows</span><span class="tag">U-Value</span><span class="tag">SHGC</span><span class="tag">ENERGY STAR</span><span class="tag">Low-E</span><span class="tag">HVAC Loads</span><span class="tag">NFRC</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="thermal-bridging-continuous-insulation-building-science.html" class="card" data-cat="building">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Thermal bridging"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Thermal</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Bridging</text></svg>
+              <span class="card-cat">Building</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Thermal Bridging</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="cool-roofs-solar-reflectance-thermal-emittance-hvac-cooling-load-reduction.html" class="card" data-cat="building">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Cool roofs"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Cool</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Roofs</text></svg>
+              <span class="card-cat">Building</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Cool Roofs</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="manual-j-load-calculation-hvac-sizing.html" class="card" data-cat="building">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Manual J"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Manual J</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Load Calc</text></svg>
+              <span class="card-cat">Building</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Manual J Load Calculation</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dedicated Outdoor Air Systems (DOAS): Decoupling Ventilation from Heating and Cooling for Energy Savings | HVAC Zone</title>
+  <meta name="description" content="DOAS separates ventilation from space conditioning, cutting HVAC energy 21-42% vs VAV systems. ACEEE reports DOAS+HRV reduces HVAC EUI up to 71% in cool climates. ASHRAE 90.1 and 189.1 require energy recovery. Up to 70% ventilation load reduction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height="32" rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Equipment</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Oct 18, 2026 · 9 min read</span>
+          </div>
+        </div>
+        <h1>Dedicated Outdoor Air Systems (DOAS): Decoupling Ventilation from Heating and Cooling for Energy Savings</h1>
+        <p class="article-lead">A DOAS uses a dedicated 100% outdoor air unit to handle ventilation and latent loads while a parallel system handles only sensible cooling and heating. ACEEE reports DOAS with heat recovery can reduce HVAC energy use up to 70% in some climates — and NIST studies show 21-38% annual HVAC cost savings versus conventional VAV systems.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 340" role="img" aria-label="Comparison diagram of conventional VAV system vs DOAS: VAV mixes return air with outdoor air and handles all loads in one unit; DOAS separates 100% outdoor air conditioning (latent + partial sensible) from parallel sensible-only local units">
+        <rect width="800" height="340" fill="var(--color-surface-offset)"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-text)" font-weight="700">Conventional VAV vs. DOAS Architecture</text>
+        <!-- VAV (left) -->
+        <g font-family="Inter" font-size="9">
+          <rect x="30" y="50" width="350" height="270" rx="8" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="2"/>
+          <text x="205" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-warm)" font-weight="700">Conventional VAV System</text>
+          <rect x="60" y="90" width="290" height="40" rx="4" fill="var(--color-surface-offset)" stroke="var(--color-text-muted)" stroke-width="1"/>
+          <text x="205" y="115" text-anchor="middle" font-size="8" fill="var(--color-text-muted)">Mixes return + outdoor air in one AHU</text>
+          <text x="60" y="155" font-size="8" fill="var(--color-text-muted)">Handles: ALL loads (sensible + latent)</text>
+          <text x="60" y="175" font-size="8" fill="var(--color-danger)">Problem: 20-70% excess OA needed for</text>
+          <text x="60" y="187" font-size="8" fill="var(--color-danger)">multi-zone ventilation (ASHRAE 62.1)</text>
+          <text x="60" y="210" font-size="8" fill="var(--color-danger)">High RH at part load (no dehumidification</text>
+          <text x="60" y="222" font-size="8" fill="var(--color-danger)">control)</text>
+          <text x="60" y="245" font-size="8" fill="var(--color-text-muted)">Large ductwork, high fan energy</text>
+          <text x="60" y="270" font-size="8" fill="var(--color-text-muted)">Energy: baseline (100%)</text>
+          <text x="60" y="295" font-size="8" fill="var(--color-warm)" font-weight="600">Latent + sensible coupled = inefficiency</text>
+        </g>
+        <!-- DOAS (right) -->
+        <g font-family="Inter" font-size="9">
+          <rect x="420" y="50" width="350" height="270" rx="8" fill="var(--color-surface)" stroke="var(--color-success)" stroke-width="2"/>
+          <text x="595" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-success)" font-weight="700">DOAS + Parallel System</text>
+          <!-- DOAS unit -->
+          <rect x="450" y="90" width="130" height="50" rx="4" fill="var(--color-surface-offset)" stroke="var(--color-success)" stroke-width="1.5"/>
+          <text x="515" y="108" text-anchor="middle" font-size="8" fill="var(--color-success)" font-weight="600">DOAS Unit</text>
+          <text x="515" y="122" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">100% OA + ERV</text>
+          <text x="515" y="134" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">Latent + partial sensible</text>
+          <!-- Parallel unit -->
+          <rect x="610" y="90" width="130" height="50" rx="4" fill="var(--color-surface-offset)" stroke="var(--color-primary)" stroke-width="1.5"/>
+          <text x="675" y="108" text-anchor="middle" font-size="8" fill="var(--color-primary)" font-weight="600">Parallel System</text>
+          <text x="675" y="122" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">Fan coil / VRF /</text>
+          <text x="675" y="134" text-anchor="middle" font-size="7" fill="var(--color-text-muted)">Chilled beams</text>
+          <!-- Benefits -->
+          <text x="450" y="165" font-size="8" fill="var(--color-success)">✓ Exact ventilation to each zone</text>
+          <text x="450" y="183" font-size="8" fill="var(--color-success)">✓ Decoupled latent/sensible control</text>
+          <text x="450" y="201" font-size="8" fill="var(--color-success)">✓ Precise humidity (low dew point)</text>
+          <text x="450" y="219" font-size="8" fill="var(--color-success)">✓ Smaller parallel equipment</text>
+          <text x="450" y="237" font-size="8" fill="var(--color-success)">✓ Smaller ductwork, less fan energy</text>
+          <text x="450" y="265" font-size="8" fill="var(--color-text-muted)">Energy: 21-70% HVAC savings</text>
+          <text x="450" y="295" font-size="8" fill="var(--color-success)" font-weight="600">Latent + sensible decoupled = efficiency</text>
+        </g>
+      </svg>
+      <figcaption>A conventional VAV system mixes return and outdoor air in a single air handler, coupling latent and sensible loads. A DOAS separates 100% outdoor air conditioning (ventilation + dehumidification) from a parallel sensible-only system, enabling precise humidity control and 21-70% HVAC energy savings.</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>In a conventional variable air volume (VAV) system, one air handler handles everything: it mixes return air with outdoor air, cools and dehumidifies the mixture, and distributes it to multiple zones. This coupling creates fundamental inefficiencies — the system must over-ventilate to ensure every zone gets enough fresh air, and it cannot independently control humidity at part-load conditions. The Dedicated Outdoor Air System (DOAS) solves this by splitting the job into two parallel systems: a dedicated unit that conditions 100% outdoor air for ventilation and humidity control, and a separate system that handles only sensible heating and cooling in each zone ([Penn State DOAS Research](http://doas-radiant.psu.edu/doas.html), [Wikipedia](https://en.wikipedia.org/wiki/Dedicated_outdoor_air_system)).</p>
+
+        <h2>The VAV problem DOAS solves</h2>
+        <p>When the multiple spaces equation of ASHRAE Standard 62.1 is applied to an all-air VAV system, 20-70% more outdoor air is typically required to ensure proper ventilation air distribution to every zone compared to a DOAS delivering air directly to each space. This excess outdoor air increases the cooling, heating, and dehumidification load. At part-load conditions, VAV systems also struggle with humidity — as the cooling coil modulates down to match reduced sensible loads, it may not dehumidify adequately, leaving indoor relative humidity too high ([Penn State](http://doas-radiant.psu.edu/doas.html)).</p>
+        <p>A properly designed DOAS handles 100% of the space latent loads and up to 30% of the space sensible loads. The parallel sensible-only system (fan coils, VRF, chilled beams, or radiant panels) handles the remaining sensible load — which is only about 40% of the design chiller load. This decoupling means each system operates at its optimal efficiency point rather than compromising to handle both latent and sensible loads simultaneously ([Penn State](http://doas-radiant.psu.edu/doas.html)).</p>
+
+        <h2>Energy savings: the numbers</h2>
+        <p>The savings are substantial. NIST researchers Emmerich and McDowell evaluated DOAS potential in U.S. commercial buildings meeting ASHRAE 90.1 requirements and found annual HVAC energy cost savings of 21-38%. A DOAS/radiant ceiling panel system simulation predicted 42% less annual electrical energy than a conventional VAV system with economizer control ([Wikipedia/NIST](https://en.wikipedia.org/wiki/Dedicated_outdoor_air_system)).</p>
+        <p>ACEEE's 2024 analysis found even greater savings with high-efficiency DOAS configurations. DOAS paired with heat recovery ventilators (HRVs) reduced HVAC energy use intensity (EUI) by an average of 61% — ranging from 71% in cooler climates to 37% in warmer ones. DOAS with energy recovery ventilators (ERV) achieved 59% average EUI reduction. In some climates, total HVAC energy use was cut by up to 70%. Annual carbon emissions reductions of 40% or more were found when comparing DOAS to existing gas-fired systems ([ACEEE](https://www.aceee.org/wp-content/uploads/2026/08/how-doas-will-be-a-key-contributor.pdf)).</p>
+
+        <table class="compare-table">
+          <thead><tr><th>Metric</th><th>Conventional VAV</th><th>DOAS + Parallel</th></tr></thead>
+          <tbody>
+            <tr><td>Outdoor air handling</td><td>Mixed with return air</td><td>100% OA, dedicated unit</td></tr>
+            <tr><td>Latent/sensible control</td><td>Coupled (compromised)</td><td>Decoupled (optimized)</td></tr>
+            <tr><td>Excess OA for multi-zone</td><td>20-70% more required</td><td>Exact amount per zone</td></tr>
+            <tr><td>Humidity at part load</td><td>Often too high</td><td>Precisely controlled</td></tr>
+            <tr><td>Annual HVAC cost savings</td><td>—</td><td>21-38% (NIST)</td></tr>
+            <tr><td>HVAC EUI reduction (HRV)</td><td>—</td><td>61% avg (up to 71%)</td></tr>
+            <tr><td>HVAC EUI reduction (ERV)</td><td>—</td><td>59% avg (up to 71%)</td></tr>
+            <tr><td>Carbon emissions reduction</td><td>—</td><td>40%+ vs gas-fired</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Deliver cold, not neutral.</b>Trane's ASHRAE-published guidance recommends delivering DOAS air cold (not reheated to neutral temperature) directly to occupied spaces. Cold supply air offsets part of the sensible cooling load, allowing local HVAC units to be downsized. This avoids the energy cost of reheating dehumidified air for much of the year — a common energy waste in conventional systems. Use recovered energy for reheat only when needed ([Trane/ASHRAE](https://www.trane.com/content/dam/Trane/Commercial/global/learning-center/ashrae-articles/DOAS%20Configurations%20and%20Control%20Strategies.pdf)).</p>
+        </div>
+
+        <h2>Energy recovery: required by code</h2>
+        <p>ASHRAE Standard 90.1 requires energy recovery ventilators (ERVs) in many commercial applications based on climate zone and outdoor air percentage, with a minimum 50% energy recovery effectiveness. ASHRAE Standard 189.1 (High-Performance Green Buildings) raises the bar to 60%. Since DOAS units process 100% outdoor air, an enthalpy wheel (total energy recovery) is essential to pre-condition incoming air using exhaust air — cutting ventilation loads by up to 70% and ventilation energy costs by up to 65% ([ACHR News/ASHRAE 189.1](https://www.achrnews.com/articles/142143-ashrae-1891-a-higher-standard-for-high-performance-green-buildings-pt-2)).</p>
+        <p>ACEEE defines high-efficiency DOAS configurations with specific performance targets: HRV-based systems need a Sensible Recovery Effectiveness (SRE) of 82% or greater with fan power of 0.77 W/cfm or less. ERV-based systems need SRE/Latent Recovery of 77%/60% respectively with fan power of 1.0 W/cfm or less. These systems are typically paired with VRF or high-efficiency heat pumps for the parallel sensible system ([ACEEE](https://www.aceee.org/wp-content/uploads/2026/08/how-doas-will-be-a-key-contributor.pdf)).</p>
+
+        <h2>When DOAS makes sense</h2>
+        <ul>
+          <li><strong>Commercial buildings:</strong> Offices, schools, healthcare — anywhere with multiple zones and significant ventilation requirements.</li>
+          <li><strong>Humid climates:</strong> DOAS excels at independent dehumidification, critical in ASHRAE climate zones 1-3 where latent loads dominate.</li>
+          <li><strong>High-performance new construction:</strong> ASHRAE 189.1, LEED, and Zero Energy Ready programs all reward DOAS with energy credits.</li>
+          <li><strong>Electrification retrofits:</strong> DOAS + heat pump replaces gas-fired heating + conventional VAV with 40%+ carbon reductions.</li>
+          <li><strong>Radiant cooling applications:</strong> DOAS handles ventilation and dehumidification while radiant panels handle sensible cooling — the highest-efficiency combination.</li>
+          <li><strong>Codes requiring it:</strong> 2021 IECC and 2022 ASHRAE 90.1 include energy credits for high-efficiency DOAS configurations.</li>
+        </ul>
+
+        <p><em>Naming a product or manufacturer in this article is for identification purposes only and does not constitute an endorsement by HVAC Zone Inc. We are a multi-brand dealer and remain neutral on brand preference.</em></p>
+
+        <p>Evaluating a DOAS for your commercial building? <a href="../index.html#contact">Request a consultation</a> — we assess your ventilation loads, climate zone, and existing equipment to determine if a DOAS configuration delivers the right energy savings and humidity control for your facility.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Equipment</span><span class="tag">DOAS</span><span class="tag">Ventilation</span><span class="tag">Energy Recovery</span><span class="tag">ASHRAE 90.1</span><span class="tag">Decoupling</span><span class="tag">Dehumidification</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="erv-vs-hrv-ventilation-recovery.html" class="card" data-cat="equipment">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="ERV vs HRV"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">ERV vs</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">HRV</text></svg>
+              <span class="card-cat">Equipment</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">ERV vs. HRV</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="vrf-systems-variable-refrigerant-flow-commercial-hvac.html" class="card" data-cat="equipment">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="VRF systems"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">VRF</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Systems</text></svg>
+              <span class="card-cat">Equipment</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">VRF Systems</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="hvac-occupancy-sensors-demand-controlled-ventilation-ashrae-62-1-energy-savings.html" class="card" data-cat="smart">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="DCV"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">DCV</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">ASHRAE 62.1</text></svg>
+              <span class="card-cat">Smart</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">DCV &amp; ASHRAE 62.1</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

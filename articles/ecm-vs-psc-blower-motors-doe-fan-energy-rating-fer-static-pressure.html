@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECM vs. PSC Blower Motors: DOE Fan Energy Rating (FER), Static Pressure, and Real-World HVAC Efficiency | HVAC Zone</title>
+  <meta name="description" content="DOE Fan Energy Rating (FER) standards cut furnace blower watts per 1,000 CFM by 46% over baseline PSC motors. Compare constant-torque (X13) and constant-airflow ECM/BPM motors against PSC blowers, and see why high external static pressure can erase ECM energy savings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Equipment</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Oct 25, 2026 · 8 min read</span>
+          </div>
+        </div>
+        <h1>ECM vs. PSC Blower Motors: DOE Fan Energy Rating (FER), Static Pressure, and Real-World HVAC Efficiency</h1>
+        <p class="article-lead">A residential furnace blower alone can consume up to 1,000 kWh of electricity per year. Federal Fan Energy Rating (FER) standards require a 46% reduction in watts per 1,000 CFM over baseline permanent split capacitor (PSC) motors — making brushless permanent magnet (BPM/ECM) motors the industry standard. Yet field research shows that undersized ductwork and high external static pressure can erase those energy savings unless the air distribution system is properly designed.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 340" role="img" aria-label="Comparison diagram of PSC, Constant-Torque ECM, and Constant-Airflow ECM furnace blower motors showing FER reduction percentages from DOE baseline and response to rising external static pressure">
+        <rect width="800" height="340" fill="var(--color-surface-offset)"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-text)" font-weight="700">Furnace Blower Motor Tiers: DOE FER Reduction &amp; Static Pressure Behavior</text>
+        <!-- Card 1: PSC -->
+        <rect x="30" y="50" width="235" height="260" rx="8" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="2"/>
+        <text x="147" y="74" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-warm)" font-weight="700">Baseline PSC Motor</text>
+        <text x="147" y="92" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Permanent Split Capacitor</text>
+        <text x="147" y="124" text-anchor="middle" font-family="Space Grotesk" font-size="22" fill="var(--color-warm)" font-weight="700">380–393</text>
+        <text x="147" y="140" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Baseline FER (W / 1,000 CFM)</text>
+        <text x="46" y="172" font-family="Inter" font-size="8" fill="var(--color-text)">• AC induction w/ run capacitor</text>
+        <text x="46" y="190" font-family="Inter" font-size="8" fill="var(--color-text)">• Fixed speed taps (low turndown)</text>
+        <text x="46" y="208" font-family="Inter" font-size="8" fill="var(--color-danger)">• High ESP → airflow drops sharply</text>
+        <text x="46" y="226" font-family="Inter" font-size="8" fill="var(--color-danger)">• Watt draw drops as airflow starves</text>
+        <text x="46" y="244" font-family="Inter" font-size="8" fill="var(--color-danger)">• Risk of coil freeze / limit trips</text>
+        <text x="46" y="280" font-family="Inter" font-size="8" fill="var(--color-warm)" font-weight="600">Improved PSC: −12% FER (EL 1)</text>
+        <!-- Card 2: Constant-Torque BPM -->
+        <rect x="282" y="50" width="235" height="260" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2"/>
+        <text x="400" y="74" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-primary)" font-weight="700">Constant-Torque BPM (X13)</text>
+        <text x="400" y="92" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">DOE Standard Baseline (EL 3–4)</text>
+        <text x="400" y="124" text-anchor="middle" font-family="Space Grotesk" font-size="22" fill="var(--color-primary)" font-weight="700">−41% to −46%</text>
+        <text x="400" y="140" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">FER Reduction vs. Baseline PSC</text>
+        <text x="298" y="172" font-family="Inter" font-size="8" fill="var(--color-text)">• Brushless permanent magnet rotor</text>
+        <text x="298" y="190" font-family="Inter" font-size="8" fill="var(--color-text)">• Programmed torque per speed tap</text>
+        <text x="298" y="208" font-family="Inter" font-size="8" fill="var(--color-success)">• Meets DOE FER = 0.044×Qmax+182</text>
+        <text x="298" y="226" font-family="Inter" font-size="8" fill="var(--color-text)">• Moderate airflow drop at high ESP</text>
+        <text x="298" y="244" font-family="Inter" font-size="8" fill="var(--color-text)">• Lower cost &amp; simpler than variable</text>
+        <text x="298" y="280" font-family="Inter" font-size="8" fill="var(--color-primary)" font-weight="600">Standard on entry/mid furnaces</text>
+        <!-- Card 3: Constant-Airflow BPM -->
+        <rect x="535" y="50" width="235" height="260" rx="8" fill="var(--color-surface)" stroke="var(--color-success)" stroke-width="2"/>
+        <text x="652" y="74" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-success)" font-weight="700">Constant-Airflow ECM</text>
+        <text x="652" y="92" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Variable-Speed + Multi-Stage (EL 5–6)</text>
+        <text x="652" y="124" text-anchor="middle" font-family="Space Grotesk" font-size="22" fill="var(--color-success)" font-weight="700">−51% to −56%</text>
+        <text x="652" y="140" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">FER Reduction vs. Baseline PSC</text>
+        <text x="551" y="172" font-family="Inter" font-size="8" fill="var(--color-text)">• Closed-loop CFM algorithm</text>
+        <text x="551" y="190" font-family="Inter" font-size="8" fill="var(--color-success)">• High turndown ratio for circulation</text>
+        <text x="551" y="208" font-family="Inter" font-size="8" fill="var(--color-success)">• Holds target CFM across ESP range</text>
+        <text x="551" y="226" font-family="Inter" font-size="8" fill="var(--color-warm)">• High ESP → ramps RPM &amp; watts up</text>
+        <text x="551" y="244" font-family="Inter" font-size="8" fill="var(--color-success)">• Protects heat exchanger &amp; coil</text>
+        <text x="551" y="280" font-family="Inter" font-size="8" fill="var(--color-success)" font-weight="600">Best with low-static ductwork</text>
+      </svg>
+      <figcaption>DOE Furnace Fan Final Rule efficiency levels compare baseline permanent split capacitor (PSC) motors against constant-torque and constant-airflow brushless permanent magnet (BPM/ECM) motors. Sources: [DOE Furnace Fans Final Rule](https://www.energy.gov/sites/prod/files/2014/06/f17/furnace_fans_final_rule.pdf), [DOE 2024 Final Determination](https://www.energy.gov/sites/default/files/2024-10/furnace%20fans%20ecs%20fd.pdf).</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>When homeowners compare furnace or air-handler specifications, most attention goes to heating efficiency (AFUE) or cooling efficiency (SEER2). Yet the indoor blower motor runs during heating, cooling, and continuous ventilation — often logging more annual operating hours than any other component in the system. In a typical 70,000 BTU/h residential furnace, the blower fan alone can consume up to 1,000 kWh per year ([ACHR News](https://www.achrnews.com/articles/140804-doe-puts-the-fer-in-furnaces)). Understanding how permanent split capacitor (PSC) motors compare to electronically commutated motors (ECMs) — Technically classified by the U.S. Department of Energy as brushless permanent magnet (BPM) motors — is essential for both equipment selection and duct system diagnostics.</p>
+
+        <h2>What the DOE Fan Energy Rating (FER) measures</h2>
+        <p>Under the federal Energy Conservation Standards for Consumer Furnace Fans (first finalized in 2014, enforced starting July 3, 2019, and reaffirmed in the DOE's October 2024 Final Determination), residential furnace fans are regulated using the Fan Energy Rating (FER) metric ([DOE 2024 Final Determination](https://www.energy.gov/sites/default/files/2024-10/furnace%20fans%20ecs%20fd.pdf); [DOE 2014 Final Rule](https://www.energy.gov/sites/prod/files/2014/06/f17/furnace_fans_final_rule.pdf)). FER expresses estimated annual electrical energy consumption normalized by operating hours and maximum airflow, measured in <strong>watts per 1,000 cubic feet per minute (W/1,000 CFM)</strong> across heating, cooling, and constant-circulation modes ([DOE TSD Chapter 3](https://www1.eere.energy.gov/buildings/appliance_standards/pdfs/ff_prelim_ch_03_mta_2012_06_21.pdf)).</p>
+        <p>In DOE's baseline engineering analysis, a standard 3-ton non-weatherized, non-condensing gas furnace with a PSC blower motor had a baseline FER of <strong>380 W/1,000 CFM</strong>, while a condensing gas furnace with a PSC motor averaged <strong>393 W/1,000 CFM</strong> ([DOE 2014 Final Rule](https://www.energy.gov/sites/prod/files/2014/06/f17/furnace_fans_final_rule.pdf); [DOE TSD Appendix 7-C](https://www1.eere.energy.gov/buildings/appliance_standards/pdfs/ff_prelim_app_07_c_furnacefanconsumption_2012_06_22.pdf)). The federal standard cut allowable FER by roughly 46% for mainstream gas furnaces, effectively retiring standard PSC motors from new residential gas and electric furnaces in favor of BPM/ECM technology ([ACHR News](https://www.achrnews.com/articles/140804-doe-puts-the-fer-in-furnaces)).</p>
+
+        <table class="compare-table">
+          <thead><tr><th>Furnace Fan Product Class / Efficiency Tier</th><th>Maximum FER Formula or Reduction</th><th>Typical Motor Technology</th></tr></thead>
+          <tbody>
+            <tr><td>Baseline Non-Condensing Gas (Pre-FER PSC)</td><td>380 W / 1,000 CFM baseline</td><td>Standard PSC induction motor</td></tr>
+            <tr><td>Baseline Condensing Gas (Pre-FER PSC)</td><td>393 W / 1,000 CFM baseline</td><td>Standard PSC induction motor</td></tr>
+            <tr><td>EL 1: Improved PSC</td><td>−12% FER vs. baseline</td><td>High-efficiency PSC motor</td></tr>
+            <tr><td>EL 2: Inverter-Driven PSC</td><td>−25% FER vs. baseline</td><td>PSC with VFD control</td></tr>
+            <tr><td>EL 3: Constant-Torque BPM (X13 style)</td><td>−41% FER vs. baseline</td><td>Single-stage constant-torque ECM</td></tr>
+            <tr><td>EL 4: Constant-Torque BPM + Multi-Stage (DOE Standard)</td><td>−46% FER (e.g., 0.044 × Qmax + 182 NWG-NC; + 195 NWG-C)</td><td>Multi-stage constant-torque ECM</td></tr>
+            <tr><td>EL 5: Constant-Airflow BPM + Multi-Stage</td><td>−51% FER vs. baseline</td><td>Communicating variable-speed ECM</td></tr>
+            <tr><td>EL 6: Premium Constant-Airflow BPM + Backward-Inclined Impeller</td><td>−56% FER vs. baseline</td><td>Variable-speed ECM + aerodynamic blower wheel</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Why ECMs beat PSC motors — and why turndown ratio matters</h2>
+        <p>A permanent split capacitor (PSC) motor is an AC induction motor that relies on slip between the rotating magnetic field and the rotor. Its electrical efficiency typically ranges from 50% to 65% at full speed and drops sharply when slowed down via voltage taps. By contrast, a brushless permanent magnet (BPM/ECM) motor converts AC power to DC and uses onboard electronics to commutate permanent magnets on the rotor, eliminating rotor slip losses and maintaining 75% to 85%+ efficiency across a wide speed range ([DOE TSD Chapter 3](https://www1.eere.energy.gov/buildings/appliance_standards/pdfs/ff_prelim_ch_03_mta_2012_06_21.pdf)).</p>
+        <p>DOE identified three core engineering advantages of BPM/ECM blowers over PSC blowers ([DOE 2014 Final Rule](https://www.energy.gov/sites/prod/files/2014/06/f17/furnace_fans_final_rule.pdf)):</p>
+        <ul>
+          <li><strong>Higher point efficiency:</strong> Lower wattage draw at any given airflow and static pressure operating point.</li>
+          <li><strong>Flat efficiency curve:</strong> Efficiency remains high across low, medium, and high speed settings instead of collapsing at reduced speeds.</li>
+          <li><strong>Superior turndown ratio:</strong> The ratio of minimum airflow to maximum airflow is much wider. Because fan power follows the affinity laws (power scales roughly with the cube of fan speed), running a constant-airflow ECM at 50% speed for continuous air circulation or first-stage heating uses a fraction of the power of a PSC motor running on its lowest tap.</li>
+        </ul>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>The static pressure paradox: why bad ductwork punishes ECM watt draw.</b>Lawrence Berkeley National Laboratory (LBNL) and DOE rulemaking records highlight a critical field difference between PSC and ECM blowers when external static pressure (ESP) is too high — such as when ducts are undersized or filters are plugged ([LBNL/OSTI](https://www.osti.gov/servlets/purl/889624); [DOE 2014 Final Rule](https://www.energy.gov/sites/prod/files/2014/06/f17/furnace_fans_final_rule.pdf)). As static pressure rises, a forward-curved fan driven by a PSC motor moves less air, and its watt draw actually drops — starving the evaporator coil or heat exchanger of airflow, reducing air conditioner efficiency by roughly 10%, and risking limit switch trips or frozen coils. A constant-airflow ECM does the opposite: it ramps up motor RPM and electrical watts to force the target CFM through the restriction. That protects the heat exchanger and coil, but at severe static pressures (above 0.8–1.0 in. w.c.), an ECM can consume as much or more electricity than a PSC motor while working against restricted ducts.</p>
+        </div>
+
+        <h2>Constant-torque vs. constant-airflow ECMs in the field</h2>
+        <p>Not all ECMs behave the same way. Manufacturers meet the DOE FER standard primarily with <strong>constant-torque BPM motors</strong> (often called X13 or SelecTech-style motors), which deliver pre-programmed torque on five discrete speed taps. They cost less than full variable-speed motors, reduce FER by 41% to 46% over PSC baselines, and do not ramp RPM endlessly if ductwork is restricted ([DOE 2024 Final Determination](https://www.energy.gov/sites/default/files/2024-10/furnace%20fans%20ecs%20fd.pdf)).</p>
+        <p><strong>Constant-airflow (variable-speed) ECMs</strong> use a microprocessor board to monitor motor torque and RPM continuously, calculating real-time static pressure and adjusting speed to hold exact CFM targets (such as 350 or 400 CFM per ton for cooling, or ramped dehumidification profiles). They reduce FER by 51% to 56% under normal static pressures, provide the quietest ramp-up/ramp-down profiles, and maintain proper airflow across clean and loaded MERV 13 filters — provided total external static pressure stays within the blower's rated envelope (typically ≤0.5 to 0.8 in. w.c.).</p>
+
+        <h2>Field checklist for blower replacements and retrofits</h2>
+        <ul>
+          <li><strong>Measure total external static pressure (TESP) first:</strong> Before blaming an ECM module failure on power surges, measure supply and return static pressure across the air handler or furnace. High static pressure forces ECMs to run hotter and at higher current, accelerating electronic module failure.</li>
+          <li><strong>Verify FER compliance when replacing furnaces:</strong> For non-weatherized condensing gas furnaces, federal law requires \( \text{FER} \le 0.044 \times Q_{\text{max}} + 195 \), and for non-condensing units \( \text{FER} \le 0.044 \times Q_{\text{max}} + 182 \) ([DOE 2024 Final Determination](https://www.energy.gov/sites/default/files/2024-10/furnace%20fans%20ecs%20fd.pdf)).</li>
+          <li><strong>Size return drops and filter cabinets generously:</strong> Upgrading a 1-inch filter rack to a 4-inch or 5-inch deep media cabinet often drops filter pressure loss by 0.15 to 0.25 in. w.c., allowing an ECM blower to deliver its rated 45%+ fan energy savings ([LBNL/OSTI](https://www.osti.gov/servlets/purl/889624)).</li>
+          <li><strong>Commission airflow taps by static pressure table:</strong> Never leave a constant-torque ECM on factory default taps without checking the manufacturer's blower table at the measured static pressure.</li>
+        </ul>
+
+        <p><em>Naming a product or manufacturer in this article is for identification purposes only and does not constitute an endorsement by HVAC Zone Inc. We are a multi-brand dealer and remain neutral on brand preference.</em></p>
+
+        <p>Hearing noisy airflow, dealing with repeat blower motor failures, or planning a furnace replacement? <a href="../index.html#contact">Request a consultation</a> — we measure total external static pressure, verify CFM per ton, and match blower and duct upgrades to your home's exact load.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Equipment</span><span class="tag">ECM Motors</span><span class="tag">PSC Motors</span><span class="tag">Fan Energy Rating</span><span class="tag">Static Pressure</span><span class="tag">DOE Standards</span><span class="tag">Airflow</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="hvac-airflow-measurement-anemometers-flow-hoods-pitot-tube-ashrae-111.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Airflow measurement"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Airflow</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">ASHRAE 111</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Airflow Measurement</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="variable-speed-vs-two-stage-compressor-hvac.html" class="card" data-cat="equipment">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Variable speed vs two stage"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Inverter</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">vs. 2-Stage</text></svg>
+              <span class="card-cat">Equipment</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Variable-Speed vs. Two-Stage</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="duct-leakage-sealing-distribution-system.html" class="card" data-cat="building">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Duct leakage and sealing"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Ducts</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Distribution</text></svg>
+              <span class="card-cat">Building</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Duct Leakage &amp; Sealing</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

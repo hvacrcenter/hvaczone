@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HVAC Occupancy Sensors for Demand-Controlled Ventilation: ASHRAE 62.1 and Energy Savings | HVAC Zone</title>
+  <meta name="description" content="ASHRAE 62.1 allows ventilation reset based on occupancy. DOE reports 18% average HVAC energy savings from occupancy-based controls. NIST found CO2 DCV cuts ventilation energy loads 10-80% depending on space type." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height="32" rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Smart</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Sep 9, 2026 · 8 min read</span>
+          </div>
+        </div>
+        <h1>HVAC Occupancy Sensors for Demand-Controlled Ventilation</h1>
+        <p class="article-lead">Most commercial buildings ventilate for design occupancy even when nearly empty. ASHRAE 62.1 allows ventilation reset based on actual occupancy — and DOE reports 18% average HVAC energy savings from occupancy-based controls. NIST research found CO2-based demand-controlled ventilation cuts ventilation energy loads 10 to 80% depending on space type.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 340" role="img" aria-label="Diagram showing three occupancy sensing methods for demand-controlled ventilation: occupancy schedules via BAS, occupancy sensors (PIR/ultrasonic/mmWave), and CO2 sensors, with energy savings ranges by space type">
+        <rect width="800" height="340" fill="var(--color-surface-offset)"/>
+        <!-- Three sensing methods -->
+        <g font-family="Inter" font-size="9" fill="var(--color-text)">
+          <rect x="30" y="30" width="230" height="80" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2"/>
+          <text x="145" y="50" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="var(--color-primary)" font-weight="700">1. Occupancy Schedules</text>
+          <text x="145" y="68" text-anchor="middle">BAS predicts population</text>
+          <text x="145" y="82" text-anchor="middle">based on time of day</text>
+          <text x="145" y="98" text-anchor="middle" fill="var(--color-text-muted)">Simplest · No sensors needed</text>
+
+          <rect x="285" y="30" width="230" height="80" rx="8" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="2"/>
+          <text x="400" y="50" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="var(--color-warm)" font-weight="700">2. Occupancy Sensors</text>
+          <text x="400" y="68" text-anchor="middle">PIR · Ultrasonic · mmWave</text>
+          <text x="400" y="82" text-anchor="middle">Detect presence or count</text>
+          <text x="400" y="98" text-anchor="middle" fill="var(--color-text-muted)">Real-time · Room-level</text>
+
+          <rect x="540" y="30" width="230" height="80" rx="8" fill="var(--color-surface)" stroke="var(--color-success)" stroke-width="2"/>
+          <text x="655" y="50" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="var(--color-success)" font-weight="700">3. CO2 Sensors</text>
+          <text x="655" y="68" text-anchor="middle">Monitor occupant-produced</text>
+          <text x="655" y="82" text-anchor="middle">CO2 diluted by outdoor air</text>
+          <text x="655" y="98" text-anchor="middle" fill="var(--color-text-muted)">Proxy for occupancy</text>
+        </g>
+        <!-- Arrows to ASHRAE 62.1 -->
+        <g stroke="var(--color-primary)" stroke-width="1.5" opacity="0.4" fill="none">
+          <path d="M145 110 L145 135 L400 135 L400 160"/>
+          <path d="M400 110 L400 160"/>
+          <path d="M655 110 L655 135 L400 135 L400 160"/>
+        </g>
+        <!-- ASHRAE 62.1 box -->
+        <rect x="250" y="160" width="300" height="40" rx="6" fill="var(--color-primary)" stroke="none"/>
+        <text x="400" y="185" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="#fff" font-weight="700">ASHRAE 62.1 Dynamic Reset</text>
+        <!-- Energy savings by space type -->
+        <g font-family="Inter" font-size="9" fill="var(--color-text)">
+          <text x="400" y="225" text-anchor="middle" font-weight="700" fill="var(--color-primary)">Energy Savings by Space Type (NIST)</text>
+          <rect x="60" y="240" width="140" height="50" rx="6" fill="var(--color-surface)" stroke="var(--color-success)" stroke-width="1.5"/>
+          <text x="130" y="258" text-anchor="middle" font-weight="700" fill="var(--color-success)">Conference/Hall</text>
+          <text x="130" y="275" text-anchor="middle">50-80% reduction</text>
+
+          <rect x="220" y="240" width="140" height="50" rx="6" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="1.5"/>
+          <text x="290" y="258" text-anchor="middle" font-weight="700" fill="var(--color-warm)">Classrooms</text>
+          <text x="290" y="275" text-anchor="middle">30-50% reduction</text>
+
+          <rect x="380" y="240" width="140" height="50" rx="6" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="1.5"/>
+          <text x="450" y="258" text-anchor="middle" font-weight="700" fill="var(--color-warm)">Fast Food</text>
+          <text x="450" y="275" text-anchor="middle">40-75% reduction</text>
+
+          <rect x="540" y="240" width="140" height="50" rx="6" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="1.5"/>
+          <text x="610" y="258" text-anchor="middle" font-weight="700" fill="var(--color-primary)">Offices</text>
+          <text x="610" y="275" text-anchor="middle">~20% reduction</text>
+
+          <rect x="700" y="240" width="80" height="50" rx="6" fill="var(--color-surface)" stroke="var(--color-success)" stroke-width="1.5"/>
+          <text x="740" y="258" text-anchor="middle" font-weight="700" fill="var(--color-success)" font-size="8">DOE Avg</text>
+          <text x="740" y="275" text-anchor="middle" font-size="8">18% HVAC</text>
+        </g>
+        <text x="400" y="320" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Source: NIST IR 7042, DOE BTO Commercial HVAC Report</text>
+      </svg>
+      <figcaption>Three methods ASHRAE 62.1 recognizes for dynamic ventilation reset — schedules, occupancy sensors, and CO2 sensors — with energy savings by space type from NIST research. Spaces with variable occupancy see the largest savings.</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>Commercial buildings waste significant energy ventilating for design occupancy that rarely exists. A lecture hall designed for 65 people may hold 20 for most of the day, yet the HVAC system delivers outdoor air for 65. ASHRAE Standard 62.1 addresses this with its dynamic reset provision, which allows ventilation rates to adjust based on actual occupancy rather than design maximums ([Trane/ASHRAE](https://www.trane.com/content/dam/Trane/Commercial/global/learning-center/ashrae-articles/CO2-Based%20Demand-Controlled%20Ventilation%20with%20ASHRAE%20Standard%2062.1.pdf)).</p>
+
+        <h2>The ASHRAE 62.1 ventilation formula</h2>
+        <p>Since 2004, ASHRAE 62.1 has required breathing-zone outdoor airflow calculated as:</p>
+        <p>\[ V_{bz} = (R_p \times P_z) + (R_a \times A_z) \]</p>
+        <p>Where \(R_p\) is the per-person rate (cfm/person), \(P_z\) is zone population, \(R_a\) is the per-area rate (cfm/sq ft), and \(A_z\) is zone floor area. For a lecture classroom: 7.5 cfm per person plus 0.06 cfm per square foot. At design occupancy of 65 people in 1,000 sq ft, the required outdoor air is 550 cfm. At 20 people, it drops to 210 cfm — a 62% reduction in outdoor air delivery. The per-person component decreases by 7.5 cfm for every person who leaves the zone ([Trane/ASHRAE](https://www.trane.com/content/dam/Trane/Commercial/global/learning-center/ashrae-articles/CO2-Based%20Demand-Controlled%20Ventilation%20with%20ASHRAE%20Standard%2062.1.pdf)).</p>
+
+        <h2>Three methods for occupancy assessment</h2>
+        <table class="compare-table">
+          <thead><tr><th>Method</th><th>How It Works</th><th>Accuracy</th><th>Cost</th><th>Best For</th></tr></thead>
+          <tbody>
+            <tr><td>Occupancy schedules</td><td>BAS predicts population by time of day</td><td>Low — assumes fixed patterns</td><td>Lowest — no hardware</td><td> predictable schedules</td></tr>
+            <tr><td>Occupancy sensors</td><td>PIR, ultrasonic, or mmWave detect presence/count</td><td>High — real-time detection</td><td>Medium — sensor per zone</td><td>Variable occupancy spaces</td></tr>
+            <tr><td>CO2 sensors</td><td>Measure CO2 produced by occupants, diluted by outdoor air</td><td>Medium — proxy for occupancy</td><td>Medium — sensor per zone</td><td>Densely occupied spaces</td></tr>
+          </tbody>
+        </table>
+
+        <p>Standard 62.1 identifies three types of dynamic reset: based on occupancy, ventilation efficiency, and economizer operation. Occupancy can be assessed through schedules, sensors, or CO2 — the choice depends on space variability, budget, and required precision ([Trane/ASHRAE](https://www.trane.com/content/dam/Trane/Commercial/global/learning-center/ashrae-articles/CO2-Based%20Demand-Controlled%20Ventilation%20with%20ASHRAE%20Standard%2062.1.pdf)).</p>
+
+        <h2>Energy savings: what the data shows</h2>
+        <p>A 2013 PNNL building-modeling study found that advanced occupancy sensors and controls could save an average of 18% of HVAC energy across U.S. commercial buildings — a potential of 670.4 TBtu. Demand-controlled ventilation specifically accounts for 15-20% savings (372 TBtu) across all building types except large offices and healthcare facilities ([DOE](https://www.energy.gov/sites/prod/files/2017/12/f46/bto-DOE-Comm-HVAC-Report-12-21-17.pdf)).</p>
+        <p>NIST research quantified savings by space type. CO2-based DCV produced ventilation energy load reductions ranging from 10% to 80%, depending on space type, climate, and occupancy schedule:</p>
+        <ul>
+          <li><strong>Conference rooms and lecture halls:</strong> More than 50% reduction in all cases, as high as 80% — the highest savings because occupancy varies most dramatically</li>
+          <li><strong>Classrooms:</strong> 30-50% reduction, depending on city and schedule alignment</li>
+          <li><strong>Fast food restaurants:</strong> 40-75% reduction, reaching 86% in Los Angeles's mild climate</li>
+          <li><strong>Offices:</strong> Approximately 20% lower than fixed-rate ventilation</li>
+        </ul>
+        <p>The NIST study found that spaces with variable occupancy — conference rooms, lecture halls, and restaurants — had significantly larger savings than offices with stable occupancy patterns. Savings were also greater in mild climates than extreme climates, because ventilation energy is a larger fraction of total HVAC load when heating and cooling demands are lower ([NIST](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7042.pdf)).</p>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Residential DCV is emerging.</b>NIST is currently testing demand-controlled ventilation performance at its Residential Test Facility, using CO2 sensors to control an energy recovery ventilator (ERV) in real time. The study evaluates control algorithms against ASHRAE Standard 62.2-2019 annual relative exposure limits, measuring outdoor air rates, ozone, and formaldehyde concentrations. Consumer-grade CO2 sensors from two brands showed different accuracies — a reminder that sensor quality matters as much as the control strategy ([NIST](https://www.nist.gov/programs-projects/measurement-science-building-systems/current-activities)).</p>
+        </div>
+
+        <h2>Choosing the right sensor technology</h2>
+        <ul>
+          <li><strong>PIR (passive infrared):</strong> Detects body heat motion. Low cost, widely available, but cannot count people — only presence/absence. Best for private offices and restrooms.</li>
+          <li><strong>Ultrasonic:</strong> Detects motion via Doppler effect. More sensitive than PIR to small movements, but can false-trigger from air currents. Best for restrooms and corridors.</li>
+          <li><strong>mmWave (millimeter wave radar):</strong> Detects presence and can count occupants. Newest technology, highest accuracy, highest cost. Best for conference rooms and classrooms where precise occupant counting enables per-person ventilation reset.</li>
+          <li><strong>CO2 sensors (NDIR):</strong> Measure actual CO2 concentration as a proxy for occupancy density. Required by some code jurisdictions for densely occupied spaces. Must be calibrated periodically to maintain accuracy.</li>
+        </ul>
+
+        <h2>Integration with ASHRAE Guideline 36</h2>
+        <p>A PNNL study for DOE used EnergyPlus to simulate occupancy-based control (OBC) in medium-sized office buildings across five U.S. climate zones, comparing against baselines from ASHRAE Standard 90.1 and Guideline 36 (high-performance sequences of operation). The proposed OBC strategies used room temperature reset, system minimum outdoor airflow reset, and zone minimum supply airflow reset — all driven by occupancy data. Results indicated significant energy savings potential ([DOE/OSTI](https://www.osti.gov/biblio/1811692)).</p>
+
+        <p><em>Naming a product or manufacturer in this article is for identification purposes only and does not constitute an endorsement by HVAC Zone Inc. We are a multi-brand dealer and remain neutral on brand preference.</em></p>
+
+        <p>Want to reduce ventilation energy waste with occupancy-based controls? <a href="../index.html#contact">Request a consultation</a> — we assess your building's occupancy patterns and recommend the right sensor strategy for your space.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Smart</span><span class="tag">Occupancy Sensors</span><span class="tag">Demand-Controlled Ventilation</span><span class="tag">ASHRAE 62.1</span><span class="tag">Energy Savings</span><span class="tag">CO2 Sensors</span><span class="tag">PIR</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="demand-controlled-ventilation-co2-sensors.html" class="card" data-cat="smart">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="CO2 sensors DCV"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">CO2 DCV</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Sensor controls</text></svg>
+              <span class="card-cat">Smart</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">DCV with CO2 Sensors</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="hvac-iot-cybersecurity-bacnet-secure-connect-building-automation.html" class="card" data-cat="smart">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="IoT cybersecurity"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">BACnet/SC</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">IoT security</text></svg>
+              <span class="card-cat">Smart</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">HVAC IoT Cybersecurity</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="building-automation-systems-bacnet-hvac-smart-controls.html" class="card" data-cat="smart">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Building automation"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">BAS</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Smart controls</text></svg>
+              <span class="card-cat">Smart</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Building Automation Systems</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

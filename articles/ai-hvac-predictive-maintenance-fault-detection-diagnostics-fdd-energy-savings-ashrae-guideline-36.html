@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI in HVAC: Predictive Maintenance, Fault Detection and Diagnostics (FDD), and the Future of Building Optimization | HVAC Zone</title>
+  <meta name="description" content="HVAC faults waste $15B annually and increase energy 4-18%. AI-powered FDD reduces energy 10-40% and cuts unplanned downtime 25-40%. ASHRAE Guideline 36 defines FDD rules; ML models achieve 80-95%+ fault detection accuracy. Predictive maintenance extends equipment life 15-25%." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height="32" rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Outlook</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Oct 22, 2026 · 9 min read</span>
+          </div>
+        </div>
+        <h1>AI in HVAC: Predictive Maintenance, Fault Detection and Diagnostics (FDD), and the Future of Building Optimization</h1>
+        <p class="article-lead">Undetected HVAC faults waste an estimated $15 billion in U.S. commercial building energy annually and increase consumption 4-18%. AI-powered FDD reduces that waste 10-40%, cuts unplanned downtime 25-40%, and extends equipment life 15-25%. ASHRAE Guideline 36 now codifies FDD rules — and machine learning is pushing detection accuracy past 95%.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 340" role="img" aria-label="Diagram showing three layers of AI HVAC optimization: Layer 1 Rule-based FDD with ASHRAE Guideline 36 rules achieving 10-15% energy savings at 60%+ adoption; Layer 2 ML-augmented FDD with 15-25% savings at 35% adoption; Layer 3 Predictive maintenance with 20-40% maintenance reduction at 25% adoption. Each layer shows key technologies and ROI metrics.">
+        <rect width="800" height="340" fill="var(--color-surface-offset)"/>
+        <text x="400" y="26" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-text)" font-weight="700">AI HVAC Optimization: Three Layers of Maturity</text>
+        <!-- Layer 1 -->
+        <rect x="30" y="50" width="240" height="270" rx="8" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="2"/>
+        <text x="150" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-warm)" font-weight="700">Layer 1: Rule-Based FDD</text>
+        <text x="150" y="88" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Mature · 60%+ adoption</text>
+        <line x1="50" y1="98" x2="250" y2="98" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="45" y="115" font-family="Inter" font-size="8" fill="var(--color-text)">ASHRAE Guideline 36 §5.16</text>
+        <text x="45" y="132" font-family="Inter" font-size="8" fill="var(--color-text)">Supply air temp fault</text>
+        <text x="45" y="147" font-family="Inter" font-size="8" fill="var(--color-text)">Damper control fault</text>
+        <text x="45" y="162" font-family="Inter" font-size="8" fill="var(--color-text)">Mixed air temp fault</text>
+        <text x="45" y="177" font-family="Inter" font-size="8" fill="var(--color-text)">Energy efficiency fault</text>
+        <line x1="50" y1="190" x2="250" y2="190" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="45" y="210" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Energy savings:</text>
+        <text x="45" y="228" font-family="Space Grotesk" font-size="16" fill="var(--color-warm)" font-weight="700">10-15%</text>
+        <text x="45" y="250" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Predefined rules, no ML</text>
+        <text x="45" y="270" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Catches hard faults only</text>
+        <text x="45" y="295" font-family="Inter" font-size="8" fill="var(--color-warm)" font-weight="600">$80-500/unit cost</text>
+        <!-- Layer 2 -->
+        <rect x="290" y="50" width="240" height="270" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2"/>
+        <text x="410" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-primary)" font-weight="700">Layer 2: ML-Augmented FDD</text>
+        <text x="410" y="88" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Production · 35% adoption</text>
+        <line x1="310" y1="98" x2="510" y2="98" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="305" y="115" font-family="Inter" font-size="8" fill="var(--color-text)">Supervised: RF, SVM, NN</text>
+        <text x="305" y="132" font-family="Inter" font-size="8" fill="var(--color-text)">Unsupervised: PCA, autoencoders</text>
+        <text x="305" y="147" font-family="Inter" font-size="8" fill="var(--color-text)">Anomaly detection from baseline</text>
+        <text x="305" y="162" font-family="Inter" font-size="8" fill="var(--color-text)">Multi-variable correlations</text>
+        <text x="305" y="177" font-family="Inter" font-size="8" fill="var(--color-text)">Seasonal baseline deviation</text>
+        <line x1="310" y1="190" x2="510" y2="190" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="305" y="210" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Energy savings:</text>
+        <text x="305" y="228" font-family="Space Grotesk" font-size="16" fill="var(--color-primary)" font-weight="700">15-25%</text>
+        <text x="305" y="250" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Detects soft faults</text>
+        <text x="305" y="270" font-family="Inter" font-size="8" fill="var(--color-text-muted)">No predefined rules needed</text>
+        <text x="305" y="295" font-family="Inter" font-size="8" fill="var(--color-primary)" font-weight="600">80-95%+ detection accuracy</text>
+        <!-- Layer 3 -->
+        <rect x="550" y="50" width="220" height="270" rx="8" fill="var(--color-surface)" stroke="var(--color-success)" stroke-width="2"/>
+        <text x="660" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-success)" font-weight="700">Layer 3: Predictive Maint.</text>
+        <text x="660" y="88" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Production · 25% adoption</text>
+        <line x1="570" y1="98" x2="750" y2="98" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="565" y="115" font-family="Inter" font-size="8" fill="var(--color-text)">LSTM / GRU / Transformer</text>
+        <text x="565" y="132" font-family="Inter" font-size="8" fill="var(--color-text)">Remaining Useful Life (RUL)</text>
+        <text x="565" y="147" font-family="Inter" font-size="8" fill="var(--color-text)">Vibration analysis + ML</text>
+        <text x="565" y="162" font-family="Inter" font-size="8" fill="var(--color-text)">Degradation curve tracking</text>
+        <text x="565" y="177" font-family="Inter" font-size="8" fill="var(--color-text)">Pre-failure warnings (weeks)</text>
+        <line x1="570" y1="190" x2="750" y2="190" stroke="var(--color-text-muted)" stroke-width="0.5" opacity="0.3"/>
+        <text x="565" y="210" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Maintenance reduction:</text>
+        <text x="565" y="228" font-family="Space Grotesk" font-size="16" fill="var(--color-success)" font-weight="700">20-40%</text>
+        <text x="565" y="250" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Downtime −25 to −40%</text>
+        <text x="565" y="270" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Lifespan +15 to +25%</text>
+        <text x="565" y="295" font-family="Inter" font-size="8" fill="var(--color-success)" font-weight="600">Parts inventory −10-20%</text>
+      </svg>
+      <figcaption>Three maturity layers of AI HVAC optimization, from mature rule-based FDD (ASHRAE Guideline 36) through ML-augmented detection to predictive maintenance with remaining-useful-life estimation. Source data: [Ingener](https://ingener.by/controls-automation-building/ai-ml-hvac-controls/), [CKY Insights](https://www.cky.com.tw/en/insights/ai-hvac-fault-detection).</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>The most expensive HVAC fault is the one nobody notices. A stuck outdoor air damper, a drifting temperature sensor, a slowly fouling condenser — these "soft faults" never trigger an alarm, yet day after day they waste energy and shorten equipment life. The seminal Katipamula and Brambley review estimated that operational and maintenance problems in U.S. commercial building HVAC systems cause over $15 billion in annual energy waste. More recent research puts the per-building impact at 4-18% increased energy consumption from undetected faults, with 5-15% of commercial HVAC energy routinely wasted ([CKY Insights](https://www.cky.com.tw/en/insights/ai-hvac-fault-detection); [EC³ Review](https://ec-3.org/wp-content/uploads/2025/10/EC32023_199.pdf)).</p>
+
+        <h2>What FDD actually detects</h2>
+        <p>Fault Detection and Diagnostics (FDD) is not a single technology but a spectrum. At the mature end, ASHRAE Guideline 36 Section 5.16 codifies rule-based FDD for air handling units: supply air temperature faults, mixed air temperature faults, damper control faults, and energy efficiency faults (running mechanical cooling when free cooling is available). ASHRAE Research Project RP-1312 extended FDD rules to chiller systems and cooling towers, and the FDD subcommittee of ASHRAE TC 7.5, working with NIST, has been developing integration standards, verification protocols, and labeling conventions for over a decade ([ASHRAE Philadelphia CTTC](https://ashraephilly.org/images/downloads/CTTC_Articles/1412_cttc.pdf); [CKY Insights](https://www.cky.com.tw/en/insights/ai-hvac-fault-detection)).</p>
+        <p>The common faults FDD targets — low refrigerant charge, refrigerant overcharge, noncondensable gases, liquid-line restrictions, compressor valve leaks, condenser and evaporator fouling, stuck valves, sensor drift, and damper linkage detachment — collectively degrade system efficiency by roughly 20% on affected units. Roughly half of all packaged commercial HVAC systems have significant faults, and these units consume 60% of commercial cooling energy ([ASHRAE Philadelphia CTTC](https://ashraephilly.org/images/downloads/CTTC_Articles/1412_cttc.pdf)).</p>
+
+        <table class="compare-table">
+          <thead><tr><th>Fault Type</th><th>Detection Accuracy (ML)</th><th>Energy Impact</th></tr></thead>
+          <tbody>
+            <tr><td>Stuck outdoor air damper</td><td>95%+</td><td>10-30% increase</td></tr>
+            <tr><td>Improper economizer operation</td><td>92%+</td><td>10-25% increase</td></tr>
+            <tr><td>Faulty temperature sensor</td><td>90%+</td><td>5-15% increase</td></tr>
+            <tr><td>Degraded heat exchanger</td><td>85%+</td><td>8-20% increase</td></tr>
+            <tr><td>VAV box reheat valve leak</td><td>80%+</td><td>15-40% increase</td></tr>
+          </tbody>
+        </table>
+
+        <h2>From rules to machine learning</h2>
+        <p>Rule-based FDD is mature — deployed in over 60% of large commercial buildings with building management systems — but it catches only the faults engineers thought to write rules for. Machine learning augments it by learning "normal" operating patterns from data and flagging deviations without predefined fault rules. Supervised models (random forests, support vector machines, neural networks) learn from labeled fault data; unsupervised methods (Principal Component Analysis, autoencoders) build baseline models from normal operation alone, making them well-suited for buildings where fault labels don't exist ([Ingener](https://ingener.by/controls-automation-building/ai-ml-hvac-controls/); [CKY Insights](https://www.cky.com.tw/en/insights/ai-hvac-fault-detection)).</p>
+        <p>Deep learning architectures — LSTM and GRU networks, and increasingly Transformers — capture temporal patterns that reveal slow degradation faults invisible to snapshot-based methods. A peer-reviewed study from K.N. Toosi University trained LSTM and GRU networks on experimental data from real building environments, demonstrating that AI-driven control strategies can reduce HVAC energy consumption by up to 40% through dynamic adaptation to environmental conditions and occupancy levels ([KNTU/NMCE](https://nmce.kntu.ac.ir/article_223666_c73876cb6754f7490edbb976f3456d0d.pdf)).</p>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Predictive maintenance: weeks of warning before failure.</b>FDD answers "what is broken right now." Predictive maintenance answers "when will it break" — estimating Remaining Useful Life (RUL). For HVAC systems, bearing degradation in compressors, pumps, and fan motors is the most common target. Vibration analysis combined with ML models can issue warnings weeks to months before bearing failure, allowing parts replacement during planned shutdowns. The ROI is quantifiable: unplanned downtime drops 25-40%, maintenance labor falls 15-25%, parts inventory shrinks 10-20%, and equipment lifespan extends 15-25% ([Ingener](https://ingener.by/controls-automation-building/ai-ml-hvac-controls/); [HAL Science Review](https://hal.science/hal-05010278/document)).</p>
+        </div>
+
+        <h2>The economics: why FDD adoption is accelerating</h2>
+        <p>At an estimated additional cost of $80 to $500 per integrated unit, FDD pays for itself quickly. A single FDD-equipped system can save $2,000 to $3,000 in avoided preventative maintenance over the lifetime of a moderately sized unit — and that's before counting energy savings. FDD catches faults that routine maintenance visits miss, because many faults only manifest under specific load conditions that don't occur during a scheduled inspection ([ASHRAE Philadelphia CTTC](https://ashraephilly.org/images/downloads/CTTC_Articles/1412_cttc.pdf)).</p>
+        <p>Beyond FDD, Model Predictive Control (MPC) takes optimization a step further by predicting future loads and pre-conditioning equipment. Research shows MPC saves 15-30% of HVAC energy compared to traditional PID control while maintaining or improving comfort. When combined with FDD, demand-controlled ventilation, supply air temperature reset, and chiller plant optimization, comprehensive BMS implementation can achieve 15-30% HVAC energy savings for existing buildings ([CKY Insights](https://www.cky.com.tw/en/insights/smart-hvac-bms)).</p>
+
+        <h2>What this means for building owners</h2>
+        <ul>
+          <li><strong>Start with rule-based FDD:</strong> ASHRAE Guideline 36 sequences are mature, well-documented, and increasingly required by code. They catch the highest-impact faults at the lowest cost.</li>
+          <li><strong>Add ML-based anomaly detection:</strong> For buildings with existing BMS data infrastructure, unsupervised ML models can find soft faults without requiring labeled training data.</li>
+          <li><strong>Prioritize predictive maintenance on rotating equipment:</strong> Compressors, pumps, and fan motors with vibration sensors offer the clearest ROI — weeks of warning, planned shutdowns, no emergency calls.</li>
+          <li><strong>Quantify the ROI:</strong> Energy savings (10-40%), maintenance labor reduction (15-25%), downtime reduction (25-40%), and equipment life extension (15-25%) are all measurable and should be tracked against the FDD system cost.</li>
+          <li><strong>Watch for explainability:</strong> Emerging research on eXplainable AI (XAI) using SHAP values addresses the "black box" problem, giving stakeholders transparency into why a model flags a fault — critical for adoption in safety-sensitive environments.</li>
+        </ul>
+
+        <p><em>Naming a product or manufacturer in this article is for identification purposes only and does not constitute an endorsement by HVAC Zone Inc. We are a multi-brand dealer and remain neutral on brand preference.</em></p>
+
+        <p>Wondering whether FDD or predictive maintenance makes sense for your building? <a href="../index.html#contact">Request a consultation</a> — we can assess your BMS data infrastructure, identify the highest-impact fault categories for your equipment, and help you build a layered FDD strategy that fits your budget.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Outlook</span><span class="tag">AI</span><span class="tag">FDD</span><span class="tag">Predictive Maintenance</span><span class="tag">ASHRAE Guideline 36</span><span class="tag">Machine Learning</span><span class="tag">Energy Savings</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="hvac-occupancy-sensors-demand-controlled-ventilation-ashrae-62-1-energy-savings.html" class="card" data-cat="smart">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="DCV"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">DCV</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Sensors</text></svg>
+              <span class="card-cat">Smart</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Occupancy Sensors &amp; DCV</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="grid-interactive-efficient-buildings-hvac-demand-response.html" class="card" data-cat="outlook">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Grid-interactive"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Grid</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Interactive</text></svg>
+              <span class="card-cat">Outlook</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Grid-Interactive Buildings</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="indoor-co2-cognitive-function-ventilation-harvard-cogfx-ashrae-62-1-productivity.html" class="card" data-cat="iaq">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="CO2 cognitive"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">CO2</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Cognitive</text></svg>
+              <span class="card-cat">IAQ</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">CO2 &amp; Cognitive Function</h3><div class="card-meta"><span>9 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

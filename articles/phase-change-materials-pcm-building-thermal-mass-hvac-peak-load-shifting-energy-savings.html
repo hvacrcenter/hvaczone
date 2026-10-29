@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phase Change Materials (PCM) in Buildings: Thermal Mass, Peak Load Shifting, and HVAC Energy Savings | HVAC Zone</title>
+  <meta name="description" content="Passive PCM envelope integration saves 15-45% HVAC energy with 8-15 year payback. Active PCM+HVAC systems achieve 20-40% energy reduction and 40-70% peak demand reduction with 3-8 year payback. NREL reports 53% peak load shift in NYC with heat pump+PCM TES. NIST confirms 6-33% energy savings from direct-contact heat exchange." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height="32" rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Building</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Oct 24, 2026 · 9 min read</span>
+          </div>
+        </div>
+        <h1>Phase Change Materials (PCM) in Buildings: Thermal Mass, Peak Load Shifting, and HVAC Energy Savings</h1>
+        <p class="article-lead">Phase change materials absorb and release thermal energy through solid-liquid phase transitions at energy densities far exceeding conventional thermal mass. A 2026 comprehensive review finds passive PCM envelope integration saves 15-45% of HVAC energy, while active PCM-HVAC systems achieve 20-40% reductions and 40-70% peak demand cuts with payback in 3-8 years.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 340" role="img" aria-label="Diagram showing PCM diurnal cycle: During daytime peak, outdoor heat drives PCM melting (charging), absorbing energy and reducing indoor heat gain. At night, cooler ambient temperatures cause PCM solidification (discharging), releasing stored energy and resetting for the next day. Peak load is shifted from daytime to nighttime.">
+        <rect width="800" height="340" fill="var(--color-surface-offset)"/>
+        <text x="400" y="26" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-text)" font-weight="700">How PCM Shifts HVAC Peak Load: The Diurnal Cycle</text>
+        <!-- Day side -->
+        <rect x="30" y="50" width="370" height="260" rx="8" fill="var(--color-surface)" stroke="var(--color-warm)" stroke-width="2"/>
+        <text x="215" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-warm)" font-weight="700">Daytime · Peak Hours</text>
+        <!-- Sun -->
+        <circle cx="90" cy="105" r="18" fill="var(--color-warm)" opacity="0.3"/>
+        <circle cx="90" cy="105" r="12" fill="var(--color-warm)" opacity="0.6"/>
+        <g stroke="var(--color-warm)" stroke-width="1.5" stroke-linecap="round">
+          <line x1="90" y1="80" x2="90" y2="72"/><line x1="90" y1="138" x2="90" y2="130"/>
+          <line x1="65" y1="105" x2="57" y2="105"/><line x1="123" y1="105" x2="115" y2="105"/>
+        </g>
+        <!-- Heat arrows -->
+        <text x="200" y="120" text-anchor="middle" font-family="Inter" font-size="9" fill="var(--color-warm)">Outdoor heat →</text>
+        <!-- PCM melting -->
+        <rect x="130" y="135" width="170" height="60" rx="6" fill="var(--color-warm)" opacity="0.15" stroke="var(--color-warm)" stroke-width="1.5"/>
+        <text x="215" y="160" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-warm)" font-weight="700">PCM Melting (Charging)</text>
+        <text x="215" y="175" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Absorbs latent heat</text>
+        <text x="215" y="188" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Solid → Liquid</text>
+        <!-- Result -->
+        <text x="50" y="225" font-family="Inter" font-size="9" fill="var(--color-success)">✓ Indoor heat gain reduced</text>
+        <text x="50" y="240" font-family="Inter" font-size="9" fill="var(--color-success)">✓ Peak HVAC load reduced</text>
+        <text x="50" y="255" font-family="Inter" font-size="9" fill="var(--color-success)">✓ Compressor runs less</text>
+        <text x="50" y="280" font-family="Inter" font-size="9" fill="var(--color-warm)" font-weight="600">Peak shifted to off-peak</text>
+        <text x="50" y="295" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Demand reduction: 40-70%</text>
+        <!-- Night side -->
+        <rect x="420" y="50" width="350" height="260" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2"/>
+        <text x="595" y="72" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-primary)" font-weight="700">Nighttime · Off-Peak Hours</text>
+        <!-- Moon -->
+        <circle cx="480" cy="105" r="14" fill="var(--color-primary)" opacity="0.2"/>
+        <path d="M475,95 a10,10 0 1,0 10,10 a8,8 0 1,1 -10,-10z" fill="var(--color-primary)" opacity="0.4"/>
+        <!-- Cool arrows -->
+        <text x="580" y="120" text-anchor="middle" font-family="Inter" font-size="9" fill="var(--color-primary)">← Cool ambient</text>
+        <!-- PCM solidifying -->
+        <rect x="510" y="135" width="170" height="60" rx="6" fill="var(--color-primary)" opacity="0.15" stroke="var(--color-primary)" stroke-width="1.5"/>
+        <text x="595" y="160" text-anchor="middle" font-family="Space Grotesk" font-size="11" fill="var(--color-primary)" font-weight="700">PCM Solidifying (Discharging)</text>
+        <text x="595" y="175" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Releases stored heat</text>
+        <text x="595" y="188" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--color-text-muted)">Liquid → Solid</text>
+        <!-- Result -->
+        <text x="440" y="225" font-family="Inter" font-size="9" fill="var(--color-success)">✓ PCM resets for next day</text>
+        <text x="440" y="240" font-family="Inter" font-size="9" fill="var(--color-success)">✓ Off-peak energy rates</text>
+        <text x="440" y="255" font-family="Inter" font-size="9" fill="var(--color-success)">✓ Free cooling available</text>
+        <text x="440" y="280" font-family="Inter" font-size="9" fill="var(--color-primary)" font-weight="600">Storage capacity: 170 MJ</text>
+        <text x="440" y="295" font-family="Inter" font-size="8" fill="var(--color-text-muted)">1000+ cycles without leakage</text>
+      </svg>
+      <figcaption>Phase change materials absorb heat during peak daytime hours by melting (charging), reducing the HVAC cooling load. At night, cooler ambient temperatures cause the PCM to solidify (discharging), releasing stored energy and resetting the cycle. This diurnal charge-discharge loop shifts HVAC demand from peak to off-peak hours, with documented peak demand reductions of 40-70% ([MDPI Energies Review](https://www.mdpi.com/1996-1073/19/5/1151); [NREL](https://research-hub.nrel.gov/en/publications/model-driven-development-of-durable-and-scalable-thermal-energy-s-2/)).</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>Conventional building thermal mass — concrete, brick, stone — stores heat through sensible temperature change, typically absorbing about 1 kJ/kg·K. Phase change materials store heat through latent phase transitions, absorbing 150-250 kJ/kg as they melt at a designed temperature, then releasing that energy as they solidify. The result is thermal storage capacity 50-100× greater per unit mass than conventional materials, concentrated at a specific temperature that can be matched to the building's comfort range. This is why PCM is emerging as one of the most effective building science strategies for HVAC peak load reduction ([Springer Thermal Engineering Review](https://link.springer.com/article/10.1134/S0040601524700174); [MDPI Energies Review](https://www.mdpi.com/1996-1073/19/5/1151)).</p>
+
+        <h2>Two approaches: passive vs active</h2>
+        <p>A 2026 comprehensive review in the journal Energies distinguishes two fundamentally different integration strategies. Passive envelope integration embeds macroencapsulated or form-stable PCMs in walls, roofs, drywall, or glazing, where they absorb heat during the day and release it at night through natural temperature swings. This approach delivers 15-45% annual energy savings with payback periods of 8-15 years, primarily through enhanced thermal inertia and indoor temperature stabilization. Active systems couple PCMs directly with HVAC equipment, heat pumps, or air handling units, using forced convection or pumped circulation to charge and discharge the thermal storage on command. Active systems achieve 20-40% energy reductions with shorter payback periods of 3-8 years, because they enable deliberate load shifting, peak shaving, and improved coefficient of performance (COP) ([MDPI Energies Review](https://www.mdpi.com/1996-1073/19/5/1151)).</p>
+
+        <table class="compare-table">
+          <thead><tr><th>Parameter</th><th>Passive (Envelope)</th><th>Active (PCM + HVAC)</th></tr></thead>
+          <tbody>
+            <tr><td>Energy savings</td><td>15-45%</td><td>20-40%</td></tr>
+            <tr><td>Peak demand reduction</td><td>Up to 70% (wall-specific)</td><td>40-70%</td></tr>
+            <tr><td>Payback period</td><td>8-15 years</td><td>3-8 years</td></tr>
+            <tr><td>Mechanism</td><td>Natural diurnal cycle</td><td>Forced charge/discharge</td></tr>
+            <tr><td>Load shifting</td><td>Passive (limited)</td><td>Active (TOU-optimized)</td></tr>
+            <tr><td>Integration</td><td>Walls, roofs, drywall, glazing</td><td>HVAC, heat pumps, AHUs, TES tanks</td></tr>
+            <tr><td>HVAC downsizing</td><td>Moderate</td><td>Significant (possible)</td></tr>
+          </tbody>
+        </table>
+
+        <h2>The heat pump + PCM TES breakthrough</h2>
+        <p>NREL's 2025 techno-economic assessment modeled a heat pump integrated with PCM thermal energy storage across three U.S. climates, finding that the optimal phase change temperature was 30°C for New York City and 20°C for Houston and Birmingham. With time-of-use utility scheduling, peak energy consumption was reduced by 47% in Houston, 53% in New York City, and 70% in Birmingham. The study found that a TES capacity of 170 MJ was sufficient for maximum demand shift, with diminishing returns once storage capacity equaled the daily building thermal load experienced during the most extreme ambient conditions ([NREL Techno-Economic Assessment](https://research-hub.nrel.gov/en/publications/techno-economic-assessment-of-residential-heat-pump-integrated-wi)).</p>
+        <p>ACEEE's 2026 analysis of PCM-HVAC integration found that grid-interactive heat pump + TES systems in commercial buildings achieved 46% average annual load shift savings in field demonstrations. For an 18-unit multifamily building, lifecycle savings reached 12% in ASHRAE Climate Zone 6 and 22% in Climate Zone 7, driven primarily by $55,000 in electrical infrastructure savings from demand consolidation — allowing smaller service panels, wiring, and transformers because the PCM TES bridges the capacity gap by charging when the heat pump has spare capacity and discharging during peak demand ([ACEEE](https://www.aceee.org/wp-content/uploads/2026/08/challenges-and-opportunities-for-hvac-phase-change.pdf)).</p>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Nearly complete peak load shift with active controls.</b>An OSTI/NREL study of an operational government building in Sumner County, Kansas found that PCM ceiling panels with a 23°C melting temperature, combined with 8 hours of precooling to 18.8°C, forced convection under the ceiling, and a 2°C thermostat setback during peak hours, achieved a 99.6% peak load shift and 98.9% peak-period electricity savings. The PCM alone (without active controls) delivered 11.5% electricity savings and 7.5% demand savings. The combination of PCM + precooling + setback effectively eliminated peak-period HVAC operation entirely under time-of-use pricing ([OSTI/NREL](https://www.osti.gov/servlets/purl/2530912)).</p>
+        </div>
+
+        <h2>Envelope integration: where PCM goes</h2>
+        <p>NREL's parametric analysis of PCM-integrated walls found that PCM placement within the wall cavity is critical. Placing PCM at 10% of the cavity width from the interior surface provides 67% peak-period heat gain reduction in Phoenix and 75% in Las Vegas, with almost no increase in total daily heat gain. PCM-insulation mixtures with 30% PCM by weight achieved 20-35% peak cooling load reduction and a peak load shift of about 3 hours. Annual heat gain reductions ranged from 3.5% to 47.2% depending on PCM thickness, melting temperature, and climate. In the heating season, PCM-impregnated drywall on the interior achieved 25% annual heating savings in NREL's EnergyPlus simulations ([OSTI/NREL](https://www.osti.gov/servlets/purl/1768289); [NREL EnergyPlus Validation](https://docs.nrel.gov/docs/fy12osti/54015.pdf)).</p>
+        <p>Dynamic building envelopes — where PCM is paired with switchable insulation that varies thermal resistance based on indoor and outdoor conditions — push even further. NREL's 2026 study of retrofittable thermal switches found that PCM-integrated dynamic walls can provide 60-70% reduction in wall-related heat gain, and switchable insulation combined with PCM delivered HVAC energy savings up to 42% in residential buildings and 17% in commercial buildings. A single-family home with dynamic thermal switches saved 980 to 2,290 kWh annually ([NREL Thermal Switches](https://docs.nlr.gov/docs/fy25osti/89100.pdf)).</p>
+
+        <h2>Direct-contact heat exchange: the NIST innovation</h2>
+        <p>NIST is developing direct-contact heat exchange (DCHX) between refrigerant and PCM, eliminating the tube walls and intermediate heat-exchange structures that limit traditional PCM-HVAC integration. In DCHX, the refrigerant flows directly through the PCM, achieving vastly higher heat transfer rates. NIST reports that DCHX between PCM and refrigerant for thermal energy storage, when applied to residential air conditioning, uses 6% to 33% less energy than conventional systems. The approach also enables HVAC system downsizing, as the thermal storage absorbs peak loads that would otherwise require larger equipment ([NIST](https://www.nist.gov/programs-projects/phase-change-material-thermal-energy-storage-hvacr-systems-utility-load-balancing)).</p>
+
+        <h2>Durability and material advances</h2>
+        <p>A critical concern with PCM has been long-term durability — many materials lose latent heat capacity after repeated cycling or leak from their containers. NREL's 2026 model-driven development of PEG-MgO shape-stabilized PCM demonstrated repeatable phase change behavior for up to 1,000 thermal cycles without leakage, while delivering a 50% peak load reduction when integrated into a wall layer. This durability milestone is essential for building applications where PCMs must cycle daily for decades ([NREL](https://research-hub.nrel.gov/en/publications/model-driven-development-of-durable-and-scalable-thermal-energy-s-2/)).</p>
+
+        <h2>What this means for building design</h2>
+        <ul>
+          <li><strong>Match PCM melting temperature to climate:</strong> NREL found 30°C optimal for NYC, 20°C for Houston/Birmingham — the phase change temperature must align with the building's comfort range and climate load profile.</li>
+          <li><strong>Size TES to daily thermal load:</strong> 170 MJ was sufficient for maximum demand shift in NREL's study; oversizing yields diminishing returns.</li>
+          <li><strong>Place PCM near the interior:</strong> 10% of cavity width from the interior surface maximizes peak reduction without increasing total heat gain.</li>
+          <li><strong>Pair with active controls for maximum benefit:</strong> PCM + precooling + thermostat setback can shift 99%+ of peak load to off-peak.</li>
+          <li><strong>Consider electrical infrastructure savings:</strong> PCM TES can reduce required service panel, wiring, and transformer capacity — $55K savings documented for multifamily buildings.</li>
+          <li><strong>Prioritize active PCM-HVAC for faster payback:</strong> 3-8 year payback for active vs 8-15 years for passive envelope integration.</li>
+        </ul>
+
+        <p><em>Naming a product or manufacturer in this article is for identification purposes only and does not constitute an endorsement by HVAC Zone Inc. We are a multi-brand dealer and remain neutral on brand preference.</em></p>
+
+        <p>Considering PCM thermal energy storage for your building or heat pump system? <a href="../index.html#contact">Request a consultation</a> — we can assess your climate zone, load profile, and time-of-use rate structure to determine whether passive envelope PCM or active PCM-HVAC integration delivers the best payback for your project.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Building</span><span class="tag">Phase Change Materials</span><span class="tag">Thermal Mass</span><span class="tag">Load Shifting</span><span class="tag">Peak Demand</span><span class="tag">Heat Pump TES</span><span class="tag">Energy Savings</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="thermal-energy-storage-tes-chilled-water-ice-hvac-peak-demand-reduction.html" class="card" data-cat="equipment">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Thermal energy storage"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">TES</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Chilled Water</text></svg>
+              <span class="card-cat">Equipment</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Thermal Energy Storage</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="window-u-value-shgc-hvac-heating-cooling-load-energy-star-nfrc.html" class="card" data-cat="building">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Window U-value"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">U-Value</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">SHGC</text></svg>
+              <span class="card-cat">Building</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Window U-Value &amp; SHGC</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="grid-interactive-efficient-buildings-hvac-demand-response.html" class="card" data-cat="outlook">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Grid-interactive"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Grid</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Interactive</text></svg>
+              <span class="card-cat">Outlook</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Grid-Interactive Buildings</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
