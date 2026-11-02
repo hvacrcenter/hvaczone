@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Range Hoods and Gas Stove Pollution: Capture Efficiency, CFM, and Makeup Air Explained | HVAC Zone</title>
+  <meta name="description" content="Gas and propane stoves raise indoor nitrogen dioxide, and many range hoods catch less than you think. Capture efficiency research from LBNL, ASHRAE 62.2 kitchen exhaust rates, IRC makeup air rules above 400 cfm, and a checklist for healthier kitchen ventilation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Indoor Air Quality</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · Nov 2, 2026 · 7 min read</span>
+          </div>
+        </div>
+        <h1>Range Hoods and Gas Stove Pollution: Capture Efficiency, CFM, and Makeup Air Explained</h1>
+        <p class="article-lead">Cooking season is here, and so are closed windows. A gas burner adds nitrogen dioxide to the air, and a range hood only helps if it actually catches the plume. Here is what the research says about capture, airflow and makeup air, and how to make your kitchen ventilation work.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 300" role="img" aria-label="Diagram: a range hood over a cooktop captures most of the plume from back burners but a larger share of the plume from front burners escapes into the kitchen">
+        <rect width="800" height="300" fill="var(--color-surface-offset)"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-text)" font-weight="700">Why Back Burners Matter: Range Hood Capture</text>
+        <rect x="250" y="55" width="300" height="50" rx="4" fill="var(--color-surface)" stroke="var(--color-text-muted)" stroke-width="2"/>
+        <text x="400" y="85" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)" font-weight="600">Range hood (vented outdoors)</text>
+        <rect x="240" y="225" width="320" height="18" fill="var(--color-text-muted)"/>
+        <text x="400" y="265" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Cooktop (side view: back of stove at left)</text>
+        <circle cx="330" cy="222" r="6" fill="var(--color-danger)"/><circle cx="470" cy="222" r="6" fill="var(--color-danger)"/>
+        <path d="M330 215 C 320 180, 340 150, 330 110" fill="none" stroke="var(--color-success)" stroke-width="3" marker-end="url(#ah)"/>
+        <text x="225" y="165" text-anchor="end" font-family="Inter" font-size="11" fill="var(--color-success)" font-weight="700">Back burner</text>
+        <text x="225" y="181" text-anchor="end" font-family="Inter" font-size="10" fill="var(--color-text-muted)">most of the plume captured</text>
+        <path d="M470 215 C 490 180, 540 150, 600 120" fill="none" stroke="var(--color-danger)" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#ah2)"/>
+        <path d="M470 215 C 470 180, 460 150, 450 110" fill="none" stroke="var(--color-success)" stroke-width="2"/>
+        <text x="610" y="165" font-family="Inter" font-size="11" fill="var(--color-danger)" font-weight="700">Front burner</text>
+        <text x="610" y="181" font-family="Inter" font-size="10" fill="var(--color-text-muted)">more escapes into the room</text>
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--color-success)"/></marker>
+          <marker id="ah2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--color-danger)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>Simplified illustration. In lab tests, hoods captured more than 90% of back-burner exhaust at high speed for two of the three designs tested, but only 46% to 78% from front burners. Data from <a href="https://eta-publications.lbl.gov/sites/default/files/16-pollutant-removal-efficiency-2011.pdf" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>.</figcaption>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>Heating season changes how a house breathes. Windows stay shut, the house tightens up, and whatever the stove puts into the air stays around longer. In homes that cook with gas or propane, that includes nitrogen dioxide (NO<sub>2</sub>), along with carbon monoxide and fine particles. The range hood is the main defense, and it's often the most misunderstood piece of ventilation in the house.</p>
+
+        <h2>What the research shows about gas stoves and NO<sub>2</sub></h2>
+        <p>EPA lists unvented combustion appliances like gas stoves as a primary indoor NO<sub>2</sub> source. It notes that in homes with gas stoves, indoor levels "often exceed outdoor levels," and that low-level exposure is linked to increased bronchial reactivity in some people with asthma and more respiratory infections in young children (<a href="https://www.epa.gov/indoor-air-quality-iaq/nitrogen-dioxides-impact-indoor-air-quality" target="_blank" rel="noopener">EPA</a>). EPA's most effective fixes are venting to the outdoors and making sure combustion appliances are correctly installed and maintained (<a href="https://www.epa.gov/indoor-air-quality-iaq/nitrogen-dioxides-impact-indoor-air-quality" target="_blank" rel="noopener">EPA</a>).</p>
+        <p>A 2024 Stanford study that measured more than 100 homes estimated that typical gas or propane stove use raises average yearly NO<sub>2</sub> exposure by about 4 parts per billion. Concentrations spiked during and after cooking even with a vented range hood running, sometimes reaching bedrooms within an hour (<a href="https://news.stanford.edu/stories/2024/05/people-with-gas-and-propane-stoves-breathe-more-unhealthy-nitrogen-dioxide" target="_blank" rel="noopener">Stanford University</a>). People in homes under 800 sq ft had about twice the average exposure (<a href="https://news.stanford.edu/stories/2024/05/people-with-gas-and-propane-stoves-breathe-more-unhealthy-nitrogen-dioxide" target="_blank" rel="noopener">Stanford University</a>).</p>
+
+        <h2>Capture efficiency: the number that matters</h2>
+        <p>A hood's CFM rating tells you how much air it moves, not how much of the cooking plume it catches. Researchers at Lawrence Berkeley National Laboratory measure <strong>capture efficiency</strong>: the share of pollutants sent directly outside. In lab tests of three common hood designs at high speed, two designs captured more than 90% of back-burner exhaust, but front-burner capture fell to 73% to 78%, and as low as 46% to 63% for one design (<a href="https://eta-publications.lbl.gov/sites/default/files/16-pollutant-removal-efficiency-2011.pdf" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>). Capture was "substantially lower" on the lowest fan setting (<a href="https://eta-publications.lbl.gov/sites/default/files/16-pollutant-removal-efficiency-2011.pdf" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>). LBNL's field survey also found nearly all microwave-hood combinations cover only about half the cooktop (<a href="https://eta-publications.lbl.gov/sites/default/files/lbnl-5067e.pdf" target="_blank" rel="noopener">LBNL range hood survey</a>).</p>
+
+        <div class="callout">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Free fix: cook on the back burners and turn the hood on before you light the burner.</b> Based on the LBNL results, moving pots to the back and running a higher fan speed are the two easiest ways to raise capture without buying anything (<a href="https://eta-publications.lbl.gov/sites/default/files/16-pollutant-removal-efficiency-2011.pdf" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>). Keep the hood running for a few minutes after you finish cooking.</p>
+        </div>
+
+        <h2>What the codes and standards say</h2>
+        <ul>
+          <li><strong>Exhaust rate:</strong> <a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62_2_2019_h_20220429.pdf" target="_blank" rel="noopener">ASHRAE Standard 62.2</a> calls for at least <strong>100 cfm</strong> for a vented range hood that's switched on as needed. Other kitchen exhaust fans, including downdraft, need 300 cfm or 5 air changes per hour in an enclosed kitchen (<a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62_2_2019_h_20220429.pdf" target="_blank" rel="noopener">ASHRAE Standard 62.2</a>).</li>
+          <li><strong>Makeup air:</strong> Under the model residential code, if a home has a fuel-burning appliance inside the air barrier that is neither direct-vent nor mechanically vented, any exhaust system capable of more than <strong>400 cfm</strong> must have makeup air at roughly the same rate, through a damper that opens automatically (<a href="https://up.codes/viewer/pennsylvania/irc-2021/chapter/15/exhaust-systems" target="_blank" rel="noopener">IRC M1503.6 (2021 text)</a>). Local codes and editions vary.</li>
+        </ul>
+        <p>The reason for that makeup air rule: a powerful hood in a tight house can pull air back down a chimney, including from an older natural-draft water heater or furnace. Bigger isn't automatically better.</p>
+
+        <h2>Kitchen ventilation checklist</h2>
+        <table class="compare-table">
+          <thead><tr><th>Check</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>Hood ducted outdoors, not recirculating</td><td>Recirculating hoods filter grease, not combustion gases. EPA's top fix is venting outside (<a href="https://www.epa.gov/indoor-air-quality-iaq/nitrogen-dioxides-impact-indoor-air-quality" target="_blank" rel="noopener">EPA</a>).</td></tr>
+            <tr><td>Hood covers the front burners</td><td>Front-burner capture is the weak spot (<a href="https://eta-publications.lbl.gov/sites/default/files/16-pollutant-removal-efficiency-2011.pdf" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>; <a href="https://eta-publications.lbl.gov/sites/default/files/lbnl-5067e.pdf" target="_blank" rel="noopener">LBNL range hood survey</a>).</td></tr>
+            <tr><td>At least 100 cfm delivered, not just rated</td><td>The ASHRAE minimum for vented hoods (<a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62_2_2019_h_20220429.pdf" target="_blank" rel="noopener">ASHRAE Standard 62.2</a>). Long, kinked or undersized ducts lower real airflow.</td></tr>
+            <tr><td>Makeup air for hoods over 400 cfm</td><td>Required where natural-draft appliances are present (<a href="https://up.codes/viewer/pennsylvania/irc-2021/chapter/15/exhaust-systems" target="_blank" rel="noopener">IRC M1503.6 (2021 text)</a>). Prevents backdrafting.</td></tr>
+            <tr><td>Natural-draft water heater or furnace nearby</td><td>Have a combustion safety and draft test done after any hood upgrade.</td></tr>
+            <tr><td>Working CO alarm</td><td>A basic safety layer in any home with combustion appliances.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Limitations</h2>
+        <p>Lab capture results depend on hood design, mounting height and fan speed, so your hood may perform better or worse. The Stanford estimates are modeled national averages. Your home's levels depend on its size, layout, ventilation and how you cook. Electric and induction cooktops don't produce combustion NO<sub>2</sub>, but cooking itself still produces particles that call for good ventilation.</p>
+
+        <p><em>This article names no products and endorses no manufacturer. HVAC Zone Inc is a multi-brand dealer, and the Hub is brand-neutral.</em></p>
+
+        <p>Upgrading a range hood or worried about backdrafting from your water heater or furnace? <a href="../index.html#contact">Request a consultation</a> and we'll check your kitchen exhaust, makeup air and combustion safety, across all major brands.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Indoor Air Quality</span><span class="tag">Range Hoods</span><span class="tag">Gas Stoves</span><span class="tag">Nitrogen Dioxide</span><span class="tag">Kitchen Ventilation</span><span class="tag">Makeup Air</span><span class="tag">ASHRAE 62.2</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="volatile-organic-compounds-vocs-homes-ventilation-health.html" class="card" data-cat="iaq">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="VOCs in Homes: Ventilation &amp; Health"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">VOCs</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Ventilation</text></svg>
+              <span class="card-cat">IAQ</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">VOCs in Homes: Ventilation &amp; Health</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="erv-vs-hrv-ventilation-recovery.html" class="card" data-cat="iaq">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="ERV vs. HRV Ventilation"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">ERV vs HRV</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Ventilation</text></svg>
+              <span class="card-cat">IAQ</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">ERV vs. HRV Ventilation</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="iaq-monitors-explained.html" class="card" data-cat="iaq">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="IAQ Monitors Explained"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">Monitors</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Sensors</text></svg>
+              <span class="card-cat">IAQ</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">IAQ Monitors Explained</h3><div class="card-meta"><span>6 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
