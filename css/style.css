@@ -1877,3 +1877,20 @@ a.brand-tile:hover {
 .parent-link:hover {
   text-decoration: underline;
 }
+
+/* ---- Hub search ---- */
+.hub-search { position: relative; max-width: 640px; margin: 0 0 var(--space-3); }
+.hub-search input {
+  width: 100%; font: inherit; font-size: 16px; color: var(--color-text);
+  padding: 0.85rem 2.75rem 0.85rem 2.75rem; border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-border-strong); background: var(--color-surface);
+  -webkit-appearance: none; appearance: none;
+}
+.hub-search input::-webkit-search-cancel-button { display: none; }
+.hub-search input:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-highlight); }
+.hub-search__icon { position: absolute; left: 1rem; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--color-text-muted); pointer-events: none; }
+.hub-search__clear { position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--color-surface-offset); color: var(--color-text-muted); font-size: 20px; line-height: 1; cursor: pointer; }
+.hub-search__status { min-height: 1.25em; margin: 0 0 var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.hub-search__go { position: absolute; right: 0.35rem; top: 50%; transform: translateY(-50%); font-family: var(--font-display); font-weight: 600; font-size: var(--text-sm); padding: 0.55rem 1.1rem; border-radius: var(--radius-full); border: 0; background: var(--color-primary); color: var(--color-text-inverse); cursor: pointer; }
+.hub-search:has(.hub-search__go) input { padding-right: 6.5rem; }

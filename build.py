@@ -50,6 +50,22 @@ def esc(s):
     return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
+def search_text(a):
+    """Lowercased keywords for the Hub search box: title, excerpt, tags, category, and article headings."""
+    parts = [a.get("title", ""), a.get("excerpt", ""), a.get("categoryLabel", ""), a.get("category", ""), " ".join(a.get("tags", []))]
+    try:
+        with open(os.path.join(ROOT, a["file"]), "r", encoding="utf-8") as f:
+            html = f.read()
+        heads = re.findall(r"<h[23][^>]*>(.*?)</h[23]>", html, re.S)
+        parts.extend(re.sub(r"<[^>]+>", " ", h) for h in heads)
+    except OSError:
+        pass
+    t = " ".join(parts)
+    t = re.sub(r"&[a-z#0-9]+;", " ", t)
+    t = t.lower().replace('"', " ")
+    return " ".join(t.split())
+
+
 def card_html(a, feature=False):
     cat = a.get("category", "equipment")
     svg = CAT_SVG_WIDE.get(cat, CAT_SVG_WIDE["equipment"]) if feature else CAT_SVG.get(cat, CAT_SVG["equipment"])
@@ -57,7 +73,7 @@ def card_html(a, feature=False):
     title = esc(a["title"])
     excerpt_html = f'<p class="card-excerpt">{esc(a["excerpt"])}</p>' if a.get("excerpt") else ""
     meta = f'<div class="card-meta"><span class="author">{esc(a.get("author","HVAC Zone Team"))}</span><span>&#8226;</span><span>{esc(a.get("readTime",""))}</span><span>&#8226;</span><span>{esc(a.get("dateLabel",""))}</span></div>'
-    return f'''          <a href="{a["file"]}" class="{cls}" data-cat="{cat}">
+    return f'''          <a href="{a["file"]}" class="{cls}" data-cat="{cat}" data-search="{search_text(a)}">
             <div class="card-media">
               {svg}
               <span class="card-cat">{esc(a.get("categoryLabel", cat))}</span>

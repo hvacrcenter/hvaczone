@@ -53,27 +53,55 @@
     });
   }
 
-  /* ---- Category filter (hub page) ---- */
+  /* ---- Category filter + search (hub page) ---- */
   var filterRoot = document.querySelector('[data-filter]');
   if (filterRoot) {
     var pills = filterRoot.querySelectorAll('.pill');
-    var cards = document.querySelectorAll('[data-cat]');
+    var cards = document.querySelectorAll('.article-grid [data-cat]');
     var empty = document.querySelector('[data-empty]');
+    var input = document.getElementById('hub-search-input');
+    var clearBtn = document.querySelector('.hub-search__clear');
+    var status = document.querySelector('[data-search-status]');
+    var activeCat = 'all';
+    var SYN = { 'ac': 'air conditioner', 'a c': 'air conditioner', 'aircon': 'air conditioner', 'minisplit': 'mini split', 'heatpump': 'heat pump', 'iaq': 'indoor air quality', 'erv': 'energy recovery', 'hrv': 'heat recovery' };
+    var norm = function (s) { return (s || '').toLowerCase().replace(/[-_/.,()]+/g, ' ').replace(/\s+/g, ' ').trim(); };
+    cards.forEach(function (card) {
+      var base = card.getAttribute('data-search') || card.textContent;
+      card._search = ' ' + norm(base) + ' ' + norm(base).replace(/ /g, '') + ' ';
+    });
+    var apply = function () {
+      var q = input ? norm(input.value) : '';
+      var words = q ? q.split(' ') : [];
+      var shown = 0;
+      cards.forEach(function (card) {
+        var catOk = activeCat === 'all' || card.getAttribute('data-cat') === activeCat;
+        var textOk = words.every(function (w) {
+          var alt = SYN[w];
+          var hit = w.length <= 3 ? card._search.indexOf(' ' + w + ' ') !== -1 || card._search.indexOf(' ' + w + 's ') !== -1 : card._search.indexOf(w) !== -1;
+          return hit || (alt && card._search.indexOf(alt) !== -1);
+        });
+        var match = catOk && textOk;
+        card.style.display = match ? '' : 'none';
+        card.classList.toggle('card--feature', !q && activeCat === 'all' && card === cards[0]);
+        if (match) shown++;
+      });
+      if (empty) empty.style.display = shown === 0 ? '' : 'none';
+      if (clearBtn) clearBtn.hidden = !q;
+      if (status) status.textContent = q ? (shown + (shown === 1 ? ' article' : ' articles') + ' found for "' + input.value.trim() + '"') : '';
+    };
     pills.forEach(function (pill) {
       pill.addEventListener('click', function () {
-        var cat = pill.getAttribute('data-cat');
-        pills.forEach(function (p) {
-          p.classList.toggle('is-active', p === pill);
-        });
-        var shown = 0;
-        cards.forEach(function (card) {
-          var match = cat === 'all' || card.getAttribute('data-cat') === cat;
-          card.style.display = match ? '' : 'none';
-          if (match) shown++;
-        });
-        if (empty) empty.style.display = shown === 0 ? '' : 'none';
+        activeCat = pill.getAttribute('data-cat');
+        pills.forEach(function (p) { p.classList.toggle('is-active', p === pill); });
+        apply();
       });
     });
+    if (input) {
+      input.addEventListener('input', apply);
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('q')) { input.value = params.get('q'); apply(); }
+    }
+    if (clearBtn) clearBtn.addEventListener('click', function () { input.value = ''; apply(); input.focus(); });
   }
 
   /* ---- Newsletter (demo, no backend) ---- */
