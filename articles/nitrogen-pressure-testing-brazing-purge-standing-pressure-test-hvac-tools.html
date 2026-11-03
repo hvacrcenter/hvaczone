@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nitrogen Pressure Testing and Brazing Purge: The Tools and Numbers Behind a Leak-Tight Install | HVAC Zone</title>
+  <meta name="description" content="How HVAC techs use nitrogen regulators, flow meters, and digital gauges to braze clean joints and prove a refrigerant system is leak-tight: test pressures, hold times, temperature correction, and press-connect fittings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="../index.html#contact" class="btn btn--primary header-cta">Request Service</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Tools</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · November 3, 2026 · 7 min read</span>
+          </div>
+        </div>
+        <h1>Nitrogen Pressure Testing and Brazing Purge: The Tools and Numbers Behind a Leak-Tight Install</h1>
+        <p class="article-lead">Most refrigerant leaks on new systems start on install day. Two nitrogen steps, flowing it while brazing and holding it under pressure afterward, are the cheapest insurance a homeowner can get. Here is what the tools do and what the numbers should look like.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 300" role="img" aria-label="Diagram: nitrogen cylinder with regulator feeding a line set; low flow during brazing, then high pressure isolated and held while a digital gauge watches for pressure drop">
+        <rect width="800" height="300" fill="var(--color-surface-offset)"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-text)" font-weight="700">Two Nitrogen Jobs: Flow While Brazing, Then Hold Under Pressure</text>
+        <rect x="40" y="70" width="50" height="170" rx="22" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/>
+        <text x="65" y="160" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)" transform="rotate(-90 65 160)">Dry N2 cylinder</text>
+        <rect x="100" y="60" width="70" height="34" rx="6" fill="var(--color-surface)" stroke="var(--color-text-muted)" stroke-width="2"/>
+        <text x="135" y="82" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text)">Regulator</text>
+        <line x1="170" y1="77" x2="230" y2="77" stroke="var(--color-text-muted)" stroke-width="3"/>
+        <rect x="230" y="50" width="160" height="200" rx="10" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2"/>
+        <text x="310" y="78" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-primary)" font-weight="700">1. Brazing</text>
+        <text x="310" y="104" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">Flow meter, end open</text>
+        <text x="310" y="124" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">Purge: 20 to 100 SCFH</text>
+        <text x="310" y="144" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">Flow: 2 to 5 SCFH</text>
+        <text x="310" y="174" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text-muted)">Keeps oxygen out,</text>
+        <text x="310" y="192" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text-muted)">so no black copper</text>
+        <text x="310" y="210" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text-muted)">oxide scale inside</text>
+        <text x="420" y="155" text-anchor="middle" font-family="Space Grotesk" font-size="22" fill="var(--color-text-muted)">&#8594;</text>
+        <rect x="450" y="50" width="310" height="200" rx="10" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2"/>
+        <text x="605" y="78" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="var(--color-primary)" font-weight="700">2. Standing pressure test</text>
+        <text x="605" y="104" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">Raise pressure in stages, then isolate</text>
+        <text x="605" y="124" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">Residential: often 250 to 600 psig</text>
+        <text x="605" y="144" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">Hold 30 to 60 min (24 h on long VRF runs)</text>
+        <text x="605" y="174" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text-muted)">Correct about 1 psi per &#176;F</text>
+        <text x="605" y="192" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text-muted)">Never exceed the lowest-rated</text>
+        <text x="605" y="210" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text-muted)">component or nameplate limit</text>
+        <text x="400" y="282" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Values summarized from PNNL, NYC HPD, and HVAC School guidance. Manufacturer instructions always govern.</text>
+      </svg>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>A new heat pump or air conditioner can be rated at any efficiency you like, but if it slowly leaks refrigerant it will lose capacity, run longer, and eventually fail. According to <a href="https://www.achrnews.com/articles/166434-refrigerant-leaks-at-startup-identifying-and-preventing-common-issues" target="_blank" rel="noopener">ACHR News</a>, installers and trainers see many startup leaks tied to two skipped steps: not flowing nitrogen during brazing, and not proving the system tight before evacuation. Both steps use the same inexpensive gas and a handful of tools.</p>
+        <p><strong>Who this helps:</strong> homeowners comparing install quotes, technicians standardizing their process, and builders writing commissioning requirements.</p>
+
+        <h2>Job one: flowing nitrogen while brazing</h2>
+        <p>When copper is heated to brazing temperature with air inside, the inner wall oxidizes and forms a dark scale. <a href="https://www.hvacrschool.com/refrigerant-leak-detection-and-prevention-epic-article/" target="_blank" rel="noopener">HVAC School</a> explains that this scale weakens joints and can break loose, and <a href="https://www.achrnews.com/articles/166434-refrigerant-leaks-at-startup-identifying-and-preventing-common-issues" target="_blank" rel="noopener">ACHR News</a> notes that it mixes with refrigerant oil and can clog metering devices, filters, and screens. The fix is to displace the air with dry nitrogen. <a href="https://www.hvacrschool.com/refrigerant-leak-detection-and-prevention-epic-article/" target="_blank" rel="noopener">HVAC School</a> describes a brief purge at roughly 20 to 100 standard cubic feet per hour (SCFH), followed by a low "flow" of about 2 to 5 SCFH during the braze, with an open end so pressure never builds. <a href="https://www.nyc.gov/assets/hpd/downloads/pdfs/services/hpd-technical-requirements-refrigerant-leak-prevention.pdf" target="_blank" rel="noopener">NYC HPD</a> makes flowing nitrogen through the tubing during brazing a written requirement for its projects.</p>
+        <p>The tool that matters here is a flow meter (or a regulator with a flow scale), not just a pressure regulator. Pressure alone cannot tell you how much gas is moving through an open line.</p>
+
+        <h2>Job two: the standing pressure test</h2>
+        <p>After the joints are made, the system is filled with dry nitrogen, isolated from the cylinder, and watched. A pressure drop means a leak. The <a href="https://basc.pnnl.gov/resource-guides/heat-pump-quality-installation-and-commissioning" target="_blank" rel="noopener">PNNL Building America Solution Center</a> heat pump commissioning guide describes residential test pressures typically between 250 and 600 psig, held for about 30 to 60 minutes, and stresses that the manufacturer's recommended pressure comes first. <a href="https://www.nyc.gov/assets/hpd/downloads/pdfs/services/hpd-technical-requirements-refrigerant-leak-prevention.pdf" target="_blank" rel="noopener">NYC HPD</a> sets a target of 550 psig or higher if the manufacturer specifies it, with a one-hour minimum for line sets under 200 feet and 24 hours for longer runs such as most VRF and multi-zone systems. For commercial refrigeration, <a href="https://www.epa.gov/sites/default/files/documents/leakguidelines.pdf" target="_blank" rel="noopener">EPA</a> leak-tight installation guidance calls for at least 300 psig and a 24-hour stand with no more than a 1 psi change on the same gauge. With A2L refrigerants, <a href="https://www.achrnews.com/articles/166434-refrigerant-leaks-at-startup-identifying-and-preventing-common-issues" target="_blank" rel="noopener">ACHR News</a> reports that a standing test of at least one hour is normally required.</p>
+
+        <div class="callout">
+          <p><strong>Temperature can fake a leak, or hide one.</strong> Nitrogen pressure rises and falls with temperature. <a href="https://www.nyc.gov/assets/hpd/downloads/pdfs/services/hpd-technical-requirements-refrigerant-leak-prevention.pdf" target="_blank" rel="noopener">NYC HPD</a> tells installers to measure outdoor shade temperature at the start and end of the test and correct by about 1 psi per &#176;F. A line set that cools 10&#176;F in the evening can lose roughly 10 psi without any leak at all.</p>
+        </div>
+
+        <h2>Tool checklist</h2>
+        <table class="compare-table">
+          <thead><tr><th>Tool</th><th>What it does</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td>Dry nitrogen cylinder</td><td>Inert gas for purge, flow, and test</td><td>Dry, oil-free nitrogen. Never oxygen or shop air.</td></tr>
+            <tr><td>High-pressure regulator with relief</td><td>Controls test pressure</td><td>Range that covers the manufacturer's test pressure, plus a relief valve</td></tr>
+            <tr><td>Flow meter or flow regulator</td><td>Sets purge and braze flow</td><td>Readable in SCFH at low flow (2 to 5 SCFH)</td></tr>
+            <tr><td>Digital pressure gauge or probe</td><td>Watches for decay</td><td><a href="https://www.nyc.gov/assets/hpd/downloads/pdfs/services/hpd-technical-requirements-refrigerant-leak-prevention.pdf" target="_blank" rel="noopener">NYC HPD</a> specifies 0.1 psi resolution and does not allow analog gauges</td></tr>
+            <tr><td>Thermometer</td><td>Temperature correction</td><td>Shade reading at start and end of the test</td></tr>
+            <tr><td>Bubble solution or leak reactant</td><td>Pinpoints a leak once pressure drops</td><td>Applied to every braze, flare, valve, and core</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Where press-connect fittings fit in</h2>
+        <p>Mechanical press fittings skip the torch entirely, which removes the oxide problem. <a href="https://hvac-blog.acca.org/code-wars-press-connect-fittings-vs-brazing-for-refrigeration/" target="_blank" rel="noopener">ACCA</a> notes that the Uniform Mechanical Code (2018 and 2021 editions) allows press-connect fittings for copper refrigerant joints, provided they comply with UL 207. They still need the same standing pressure test. A press joint is a different way to make a connection, not a reason to skip proving it.</p>
+
+        <h2>A homeowner's quick check</h2>
+        <ul>
+          <li>Ask whether nitrogen will flow during brazing, or whether press fittings will be used.</li>
+          <li>Ask for the test pressure, hold time, and start and end readings in writing.</li>
+          <li>Ask whether the test pressure came from the manufacturer's installation instructions.</li>
+          <li>Ask that the evacuation (micron) reading be recorded after the pressure test.</li>
+        </ul>
+
+        <h2>Limitations</h2>
+        <p>A pressure test proves tightness on the day of the test. It cannot predict vibration damage, rub-outs, or corrosion years later. Test pressures and hold times vary by manufacturer, system size, and local requirements. The numbers above are typical published guidance, not a substitute for the installation manual. Hold times under an hour can miss very slow leaks, which is one reason high-resolution digital gauges have become common.</p>
+
+        <p><em>Not an endorsement: this article names no tool or fitting manufacturer. Choose equipment by range, resolution, pressure rating, listing, and serviceability. HVAC Zone Inc is a multi-brand dealer, and the Hub is brand-neutral.</em></p>
+        <p>Planning a new system or chasing a repeat leak? <a href="../index.html#contact">Request a consultation</a> with HVAC Zone for a site-specific assessment.</p>
+      </div>
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Tools</span><span class="tag">Nitrogen</span><span class="tag">Brazing</span><span class="tag">Leak Testing</span><span class="tag">Pressure Test</span><span class="tag">A2L</span><span class="tag">Commissioning</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="refrigerant-leak-detection-methods-hvac-tools.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Refrigerant Leak Detection: Methods, Tools, and A2L Safety"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">LEAK</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">detection</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Refrigerant Leak Detection: Methods, Tools, and A2L Safety</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="hvac-system-evacuation-micron-gauges-vacuum-pumps.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="HVAC System Evacuation: Micron Gauges, Vacuum Pumps, and Why Deep Vacuum Matters"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">500</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">microns</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">HVAC System Evacuation: Micron Gauges, Vacuum Pumps, and Why Deep Vacuum Matters</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="hvac-commissioning-tests-explained.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Tests Behind a Real HVAC Install: Commissioning Explained"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">TEST</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">commissioning</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">The Tests Behind a Real HVAC Install: Commissioning Explained</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="10" fill="var(--color-primary)"/>
+              <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            </svg>
+            <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+          </a>
+          <p>Stay comfortable and breathe clean air. Installation, repair, maintenance and sales of heating and cooling equipment across most major brands. Multi-brand dealer — no single-brand bias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list"><li><a href="../index.html#services">Installation</a></li><li><a href="../index.html#services">Repair</a></li><li><a href="../index.html#services">Maintenance</a></li><li><a href="../index.html#services">Indoor Air Quality</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hub</h4>
+          <ul role="list"><li><a href="../hub.html">All Articles</a></li><li><a href="../hub.html">Equipment Reviews</a></li><li><a href="../hub.html">Smart Thermostats</a></li><li><a href="../hub.html">Building Science</a></li><li><a href="../editorial-policy.html">Editorial Policy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li><a href="mailto:info@hvaczonenj.com">info@hvaczonenj.com</a></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor · Licensed &amp; Insured</span>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1 .3-1.5 1.6-1.5H17V2.2C16.4 2.1 15.3 2 14 2c-2.8 0-4.5 1.7-4.5 4.8V10H6v4h3.5v8H13z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.2-.2-3.4-.5-4.2-.3-.8-1-1.4-1.8-1.7C18.7 5.8 12 5.8 12 5.8s-6.7 0-7.7.3c-.8.3-1.5.9-1.8 1.7C2.2 8.6 2 9.8 2 12s.2 3.4.5 4.2c.3.8 1 1.4 1.8 1.7 1 .3 7.7.3 7.7.3s6.7 0 7.7-.3c.8-.3 1.5-.9 1.8-1.7.3-.8.5-2 .5-4.2zM10 15V9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-4-5-5 5H3l8-9L3 3h6l4 4 4-4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
