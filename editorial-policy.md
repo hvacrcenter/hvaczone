@@ -96,3 +96,7 @@ public resource, not a solicitation.
 - Endorsement of any brand over another without cited, criteria-based evidence.
 - Political, discriminatory, or off-topic content.
 - Plagiarism — always rewrite in original words and cite the source.
+
+## Technical review line
+- Daily articles publish with author "HVAC Zone Team" only. Do NOT add the "Technical review: Javier Santiago..." line or reviewedBy schema at publish time.
+- The reviewer line and reviewedBy/lastReviewed JSON-LD are added only after Javier confirms he has reviewed that specific article (he reviews at least weekly). As of Nov 3, 2026 every article published through Nov 3 has been reviewed.

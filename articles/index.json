@@ -16,7 +16,8 @@
       "Leak Testing",
       "Pressure Test",
       "A2L",
-      "Commissioning"
+      "Commissioning",
+      "Technical Review"
     ]
   },
   {
@@ -36,7 +37,8 @@
       "Nitrogen Dioxide",
       "Kitchen Ventilation",
       "Makeup Air",
-      "ASHRAE 62.2"
+      "ASHRAE 62.2",
+      "Technical Review"
     ]
   },
   {
@@ -56,7 +58,8 @@
       "AFUE",
       "Outdoor Reset",
       "Hydronic Heating",
-      "Replacement Guide"
+      "Replacement Guide",
+      "Technical Review"
     ]
   },
   {
@@ -75,7 +78,8 @@
       "Moisture",
       "Combustion Safety",
       "Radon",
-      "IRC R408.3"
+      "IRC R408.3",
+      "Technical Review"
     ]
   },
   {
@@ -94,7 +98,8 @@
       "End of Support",
       "Cybersecurity",
       "Cyber Trust Mark",
-      "Buying Guide"
+      "Buying Guide",
+      "Technical Review"
     ]
   },
   {
@@ -114,7 +119,8 @@
       "Electrification",
       "Benchmarking",
       "Multifamily",
-      "Commercial HVAC"
+      "Commercial HVAC",
+      "Technical Review"
     ]
   },
   {
@@ -135,7 +141,8 @@
       "Heating Costs",
       "Utility Rebates",
       "R-22 Phaseout",
-      "Cold-Climate Heat Pumps"
+      "Cold-Climate Heat Pumps",
+      "Technical Review"
     ]
   },
   {
@@ -156,7 +163,8 @@
       "Clamp Meters",
       "Megohmmeter",
       "VFDs",
-      "IEC 61010"
+      "IEC 61010",
+      "Technical Review"
     ]
   },
   {
@@ -177,7 +185,8 @@
       "MERV-A",
       "Filtration",
       "UVGI",
-      "Ventilation"
+      "Ventilation",
+      "Technical Review"
     ]
   },
   {
@@ -198,7 +207,8 @@
       "Fan Energy Rating",
       "Static Pressure",
       "DOE Standards",
-      "Airflow"
+      "Airflow",
+      "Technical Review"
     ]
   },
   {
@@ -219,7 +229,8 @@
       "Load Shifting",
       "Peak Demand",
       "Heat Pump TES",
-      "Energy Savings"
+      "Energy Savings",
+      "Technical Review"
     ]
   },
   {
@@ -240,7 +251,8 @@
       "Predictive Service",
       "Truck Rolls",
       "FDD",
-      "Energy Savings"
+      "Energy Savings",
+      "Technical Review"
     ]
   },
   {
@@ -261,7 +273,8 @@
       "Predictive Maintenance",
       "ASHRAE Guideline 36",
       "Machine Learning",
-      "Energy Savings"
+      "Energy Savings",
+      "Technical Review"
     ]
   },
   {
@@ -283,7 +296,8 @@
       "Heat Pumps",
       "R-290",
       "A2L",
-      "Market Data"
+      "Market Data",
+      "Technical Review"
     ]
   },
   {
@@ -305,7 +319,8 @@
       "EPA Section 608",
       "Superheat",
       "Subcooling",
-      "AHRI 740"
+      "AHRI 740",
+      "Technical Review"
     ]
   },
   {
@@ -326,7 +341,8 @@
       "Cognitive Function",
       "ASHRAE 62.1",
       "Productivity",
-      "DCV"
+      "DCV",
+      "Technical Review"
     ]
   },
   {
@@ -347,7 +363,8 @@
       "Energy Recovery",
       "ASHRAE 90.1",
       "Decoupling",
-      "Dehumidification"
+      "Dehumidification",
+      "Technical Review"
     ]
   },
   {
@@ -369,7 +386,8 @@
       "ENERGY STAR",
       "Low-E",
       "HVAC Loads",
-      "NFRC"
+      "NFRC",
+      "Technical Review"
     ]
   },
   {
@@ -390,7 +408,8 @@
       "Thread",
       "ENERGY STAR",
       "Apple Home",
-      "Demand Response"
+      "Demand Response",
+      "Technical Review"
     ]
   },
   {
@@ -435,7 +454,8 @@
       "Cold-Climate Heat Pumps",
       "R-22",
       "A2L",
-      "Data Centers"
+      "Data Centers",
+      "Technical Review"
     ]
   },
   {
@@ -456,7 +476,8 @@
       "AHRI 740",
       "Evacuation",
       "Reclamation",
-      "Compliance"
+      "Compliance",
+      "Technical Review"
     ]
   },
   {
@@ -478,7 +499,8 @@
       "CARB",
       "ASHRAE 62.1",
       "Health",
-      "Filtration"
+      "Filtration",
+      "Technical Review"
     ]
   },
   {
@@ -499,7 +521,8 @@
       "Chilled Water",
       "Peak Demand",
       "Demand Response",
-      "ASHRAE"
+      "ASHRAE",
+      "Technical Review"
     ]
   },
   {
@@ -520,7 +543,8 @@
       "Thermal Emittance",
       "ASHRAE 90.1",
       "Cooling Load",
-      "Energy Savings"
+      "Energy Savings",
+      "Technical Review"
     ]
   },
   {
@@ -541,7 +565,8 @@
       "ASHRAE 62.1",
       "Energy Savings",
       "CO2 Sensors",
-      "PIR"
+      "PIR",
+      "Technical Review"
     ]
   },
   {
@@ -562,7 +587,8 @@
       "IEER",
       "IVEC",
       "ASHRAE 90.1",
-      "Energy Efficiency"
+      "Energy Efficiency",
+      "Technical Review"
     ]
   },
   {
@@ -584,7 +610,8 @@
       "ASHRAE",
       "R290",
       "Refrigerants",
-      "DOE"
+      "DOE",
+      "Technical Review"
     ]
   },
   {
@@ -605,7 +632,8 @@
       "Anemometer",
       "Flow Hood",
       "ASHRAE 111",
-      "TAB"
+      "TAB",
+      "Technical Review"
     ]
   },
   {
@@ -625,7 +653,8 @@
       "Carcinogen",
       "Ventilation",
       "Activated Carbon",
-      "EPA"
+      "EPA",
+      "Technical Review"
     ]
   },
   {
@@ -645,7 +674,8 @@
       "Energy Efficiency",
       "ASHRAE",
       "DOE",
-      "Climate"
+      "Climate",
+      "Technical Review"
     ]
   },
   {
@@ -665,7 +695,8 @@
       "Heat Pumps",
       "Energy Efficiency",
       "Building Science",
-      "DOE"
+      "DOE",
+      "Technical Review"
     ]
   },
   {
@@ -685,7 +716,8 @@
       "BACnet/SC",
       "IoT Security",
       "Building Automation",
-      "NIST"
+      "NIST",
+      "Technical Review"
     ]
   },
   {
@@ -705,7 +737,8 @@
       "Condensing Furnace",
       "Regulation",
       "2028 Compliance",
-      "Energy Efficiency"
+      "Energy Efficiency",
+      "Technical Review"
     ]
   },
   {
@@ -726,7 +759,8 @@
       "Refrigerants",
       "Electrification",
       "Shipments",
-      "Grid"
+      "Grid",
+      "Technical Review"
     ]
   },
   {
@@ -746,7 +780,8 @@
       "Furnace Efficiency",
       "CO Safety",
       "ANSI Z21.47",
-      "Combustion Tuning"
+      "Combustion Tuning",
+      "Technical Review"
     ]
   },
   {
@@ -766,7 +801,8 @@
       "Ultraviolet Germicidal Irradiation",
       "Coil Cleaning",
       "Air Disinfection",
-      "ASHRAE Standard 185"
+      "ASHRAE Standard 185",
+      "Technical Review"
     ]
   },
   {
@@ -786,7 +822,8 @@
       "Heat Recovery",
       "Commercial HVAC",
       "Energy Efficiency",
-      "Inverter Compressor"
+      "Inverter Compressor",
+      "Technical Review"
     ]
   },
   {
@@ -806,7 +843,8 @@
       "Building Envelope",
       "ASHRAE 90.1",
       "Advanced Framing",
-      "R-Value"
+      "R-Value",
+      "Technical Review"
     ]
   },
   {
@@ -826,7 +864,8 @@
       "Energy Efficiency",
       "Diagnostics",
       "Building Automation",
-      "Smart Monitoring"
+      "Smart Monitoring",
+      "Technical Review"
     ]
   },
   {
@@ -846,7 +885,8 @@
       "OpenADR",
       "Smart Grid",
       "Decarbonization",
-      "ASHRAE 223P"
+      "ASHRAE 223P",
+      "Technical Review"
     ]
   },
   {
@@ -866,7 +906,8 @@
       "DOE",
       "Price Increases",
       "Refrigerants",
-      "Industry News"
+      "Industry News",
+      "Technical Review"
     ]
   },
   {
@@ -886,7 +927,8 @@
       "Dew Point",
       "ASHRAE 55",
       "Mold Prevention",
-      "Psychrometric Chart"
+      "Psychrometric Chart",
+      "Technical Review"
     ]
   },
   {
@@ -906,7 +948,8 @@
       "Indoor Air Quality",
       "ASHRAE 62.2",
       "Ventilation",
-      "Source Control"
+      "Source Control",
+      "Technical Review"
     ]
   },
   {
@@ -926,7 +969,8 @@
       "Ductless",
       "SEER2",
       "Energy Efficiency",
-      "Cold Climate"
+      "Cold Climate",
+      "Technical Review"
     ]
   },
   {
@@ -946,7 +990,8 @@
       "ACH50",
       "Building Envelope",
       "Infiltration",
-      "Energy Efficiency"
+      "Energy Efficiency",
+      "Technical Review"
     ]
   },
   {
@@ -966,7 +1011,8 @@
       "ASHRAE 135",
       "Commercial HVAC",
       "Energy Efficiency",
-      "Smart Controls"
+      "Smart Controls",
+      "Technical Review"
     ]
   },
   {
@@ -986,7 +1032,8 @@
       "Vacuum Pump",
       "POE Oil",
       "ASHRAE",
-      "EPA Section 608"
+      "EPA Section 608",
+      "Technical Review"
     ]
   },
   {
@@ -1006,7 +1053,8 @@
       "DOE Standards",
       "R-290",
       "AIM Act",
-      "Data Center Cooling"
+      "Data Center Cooling",
+      "Technical Review"
     ]
   },
   {
@@ -1026,7 +1074,8 @@
       "R-290",
       "R-717",
       "GWP",
-      "Electrification"
+      "Electrification",
+      "Technical Review"
     ]
   },
   {
@@ -1045,7 +1094,8 @@
       "IAQ",
       "Lung Cancer",
       "Sub-Slab Depressurization",
-      "Mitigation"
+      "Mitigation",
+      "Technical Review"
     ]
   },
   {
@@ -1064,7 +1114,8 @@
       "Ground Loop",
       "COP Ratings",
       "ENERGY STAR",
-      "Tax Credits"
+      "Tax Credits",
+      "Technical Review"
     ]
   },
   {
@@ -1083,7 +1134,8 @@
       "Building Science",
       "Moisture Control",
       "Mold Prevention",
-      "Air Sealing"
+      "Air Sealing",
+      "Technical Review"
     ]
   },
   {
@@ -1102,7 +1154,8 @@
       "Motorized Dampers",
       "Smart Controls",
       "Energy Savings",
-      "Bypass Damper"
+      "Bypass Damper",
+      "Technical Review"
     ]
   },
   {
@@ -1121,7 +1174,8 @@
       "Infrared Thermography",
       "Duct Leaks",
       "Diagnostics",
-      "Building Envelope"
+      "Building Envelope",
+      "Technical Review"
     ]
   },
   {
@@ -1141,7 +1195,8 @@
       "Heat Pump Shipments",
       "HEAR Rebates",
       "R-410A",
-      "Wildfire Smoke"
+      "Wildfire Smoke",
+      "Technical Review"
     ]
   },
   {
@@ -1160,7 +1215,8 @@
       "A2L",
       "R-454B",
       "AIM Act",
-      "Refrigerant Transition"
+      "Refrigerant Transition",
+      "Technical Review"
     ]
   },
   {
@@ -1179,7 +1235,8 @@
       "UEF",
       "DOE 2029 Standard",
       "Electrification",
-      "25C Tax Credit"
+      "25C Tax Credit",
+      "Technical Review"
     ]
   },
   {
@@ -1198,7 +1255,8 @@
       "PM2.5",
       "MERV 13",
       "Filtration",
-      "IAQ"
+      "IAQ",
+      "Technical Review"
     ]
   },
   {
@@ -1217,7 +1275,8 @@
       "Load Calculation",
       "Oversizing",
       "ACCA",
-      "Right-Sizing"
+      "Right-Sizing",
+      "Technical Review"
     ]
   },
   {
@@ -1236,7 +1295,8 @@
       "Energy Savings",
       "ENERGY STAR",
       "NREL",
-      "Setback"
+      "Setback",
+      "Technical Review"
     ]
   },
   {
@@ -1255,7 +1315,8 @@
       "Section 608",
       "A2L Safety",
       "Refrigerant",
-      "ASHRAE 15"
+      "ASHRAE 15",
+      "Technical Review"
     ]
   },
   {
@@ -1276,7 +1337,8 @@
       "AIM Act",
       "A2L",
       "Refrigerants",
-      "NEC"
+      "NEC",
+      "Technical Review"
     ]
   },
   {
@@ -1295,7 +1357,8 @@
       "25C",
       "Rebates",
       "Inflation Reduction Act",
-      "OBBB"
+      "OBBB",
+      "Technical Review"
     ]
   },
   {
@@ -1314,7 +1377,8 @@
       "Inverter Compressor",
       "Two-Stage",
       "SEER2",
-      "Efficiency"
+      "Efficiency",
+      "Technical Review"
     ]
   },
   {
@@ -1333,7 +1397,8 @@
       "Air Filters",
       "Pressure Drop",
       "PM2.5",
-      "Indoor Air Quality"
+      "Indoor Air Quality",
+      "Technical Review"
     ]
   },
   {
@@ -1352,7 +1417,8 @@
       "Radiant Barriers",
       "Air Sealing",
       "Ductwork",
-      "Building Science"
+      "Building Science",
+      "Technical Review"
     ]
   },
   {
@@ -1371,7 +1437,8 @@
       "Process Rule",
       "Efficiency Standards",
       "SEER2",
-      "Regulation"
+      "Regulation",
+      "Technical Review"
     ]
   },
   {
@@ -1390,7 +1457,8 @@
       "CO2 Sensors",
       "Smart Ventilation",
       "Energy Savings",
-      "IAQ"
+      "IAQ",
+      "Technical Review"
     ]
   },
   {
@@ -1409,7 +1477,8 @@
       "Refrigerant",
       "Regulation",
       "Electrification",
-      "Supply Chain"
+      "Supply Chain",
+      "Technical Review"
     ]
   },
   {
@@ -1428,7 +1497,8 @@
       "UEF",
       "Electrification",
       "DOE Standards",
-      "Energy Efficiency"
+      "Energy Efficiency",
+      "Technical Review"
     ]
   },
   {
@@ -1447,7 +1517,8 @@
       "Combustion Safety",
       "Backdrafting",
       "CO Alarms",
-      "Draft Testing"
+      "Draft Testing",
+      "Technical Review"
     ]
   },
   {
@@ -1466,7 +1537,8 @@
       "Demand Response",
       "Load Shifting",
       "Precooling",
-      "Smart Grid"
+      "Smart Grid",
+      "Technical Review"
     ]
   },
   {
@@ -1485,7 +1557,8 @@
       "Duct Sealing",
       "Mastic",
       "Airflow",
-      "Building Science"
+      "Building Science",
+      "Technical Review"
     ]
   },
   {
@@ -1504,7 +1577,8 @@
       "HRV",
       "Ventilation",
       "Recovery",
-      "IAQ"
+      "IAQ",
+      "Technical Review"
     ]
   },
   {
@@ -1523,7 +1597,8 @@
       "Cold Climate",
       "Electrification",
       "COP",
-      "HSPF2"
+      "HSPF2",
+      "Technical Review"
     ]
   },
   {
@@ -1542,7 +1617,8 @@
       "Policy",
       "Refrigerant",
       "Supply Chain",
-      "Electrification"
+      "Electrification",
+      "Technical Review"
     ]
   },
   {
@@ -1561,7 +1637,8 @@
       "Dehumidifier",
       "Mold",
       "Relative Humidity",
-      "IAQ"
+      "IAQ",
+      "Technical Review"
     ]
   },
   {
@@ -1580,7 +1657,8 @@
       "MERV 13",
       "HEPA",
       "PM2.5",
-      "Filtration"
+      "Filtration",
+      "Technical Review"
     ]
   },
   {
@@ -1599,7 +1677,8 @@
       "Field Tools",
       "Vacuum",
       "Airflow",
-      "Refrigerant Charge"
+      "Refrigerant Charge",
+      "Technical Review"
     ]
   },
   {
@@ -1618,7 +1697,8 @@
       "Copper",
       "Tariffs",
       "Pricing",
-      "2026"
+      "2026",
+      "Technical Review"
     ]
   },
   {
@@ -1637,7 +1717,8 @@
       "Efficiency",
       "DOE Standards",
       "ENERGY STAR",
-      "Heat Pumps"
+      "Heat Pumps",
+      "Technical Review"
     ]
   },
   {
@@ -1656,7 +1737,8 @@
       "A2L",
       "R-410A",
       "Regulations",
-      "AIM Act"
+      "AIM Act",
+      "Technical Review"
     ]
   },
   {
@@ -1675,7 +1757,8 @@
       "AC Not Cooling",
       "Maintenance",
       "Climate",
-      "Summer"
+      "Summer",
+      "Technical Review"
     ]
   },
   {
@@ -1694,7 +1777,8 @@
       "Energy Savings",
       "Reviews",
       "Residential",
-      "NJ"
+      "NJ",
+      "Technical Review"
     ]
   },
   {
@@ -1713,7 +1797,8 @@
       "Indoor Air Quality",
       "PM2.5",
       "CO2",
-      "Health"
+      "Health",
+      "Technical Review"
     ]
   },
   {
@@ -1731,7 +1816,8 @@
       "Building Science",
       "Insulation",
       "Air Sealing",
-      "Efficiency"
+      "Efficiency",
+      "Technical Review"
     ]
   }
 ]
