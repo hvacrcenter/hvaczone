@@ -1894,3 +1894,14 @@ a.brand-tile:hover {
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .hub-search__go { position: absolute; right: 0.35rem; top: 50%; transform: translateY(-50%); font-family: var(--font-display); font-weight: 600; font-size: var(--text-sm); padding: 0.55rem 1.1rem; border-radius: var(--radius-full); border: 0; background: var(--color-primary); color: var(--color-text-inverse); cursor: pointer; }
 .hub-search:has(.hub-search__go) input { padding-right: 6.5rem; }
+
+/* ---- Mobile overflow fixes (Nov 2026) ---- */
+.newsletter > * { min-width: 0; }
+.field-row input { min-width: 0; }
+@media (max-width: 480px) {
+  .field-row { flex-wrap: wrap; }
+  .field-row input, .field-row .btn { flex: 1 1 100%; }
+}
+@media (max-width: 700px) {
+  .compare-table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
