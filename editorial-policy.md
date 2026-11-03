@@ -33,7 +33,7 @@ Priority order:
   publish that claim. Drop it or rephrase as clearly-labeled opinion.
 
 ## 4. Citations
-- Every factual sentence includes an inline markdown link to the real URL of the
+- Every factual sentence includes an inline HTML link (<a href="URL">Source Name</a>, never markdown [text](url) syntax) to the real URL of the
   primary document. Anchor text = source name (e.g., "EPA", "DOE", "ASHRAE").
 - Use ONLY URLs you actually retrieved during this run. Never fabricate or guess URLs.
 - Verify the URL resolves before citing.
