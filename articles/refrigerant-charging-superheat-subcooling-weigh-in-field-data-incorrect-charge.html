@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refrigerant Charging by Superheat, Subcooling, and Weight: The Tools, the Targets, and How Often Charge Is Wrong | HVAC Zone</title>
+  <meta name="description" content="Field studies of thousands of air conditioners find a large share charged wrong. How superheat, subcooling, and weigh-in charging work, the ENERGY STAR and ACCA tolerances, what NIST found about efficiency losses, and why R-454B and cold weather change the routine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.hvaczonenj.com/articles/refrigerant-charging-superheat-subcooling-weigh-in-field-data-incorrect-charge.html",
+  "name": "Refrigerant Charging by Superheat, Subcooling, and Weight: The Tools, the Targets, and How Often Charge Is Wrong",
+  "mainEntity": {
+    "@type": "Article",
+    "headline": "Refrigerant Charging by Superheat, Subcooling, and Weight: The Tools, the Targets, and How Often Charge Is Wrong",
+    "datePublished": "2026-11-10",
+    "dateModified": "2026-11-10",
+    "author": {
+      "@type": "Organization",
+      "name": "HVAC Zone Team",
+      "url": "https://www.hvaczonenj.com/hub.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HVAC Zone Inc",
+      "@id": "https://www.hvaczonenj.com/#business",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hvaczonenj.com/img/hvac-zone-logo.png"
+      }
+    }
+  }
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#service-area">Service Areas</a></li>
+          <li><a href="../brands.html">Brands</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="tel:+19736876386" class="btn btn--primary header-cta">Call 24/7</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Tools</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · November 10, 2026 · 7 min read</span>
+          </div>
+        </div>
+        <h1>Refrigerant Charging by Superheat, Subcooling, and Weight: The Tools, the Targets, and How Often Charge Is Wrong</h1>
+        <p class="article-lead">A new air conditioner or heat pump ships with a factory charge sized for a short line set. Getting the final charge right takes a scale, accurate pressure and temperature readings, and the manufacturer’s target. Field studies show it is skipped or done wrong more often than most homeowners would guess.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 300" role="img" aria-label="Diagram of where superheat and subcooling are measured: superheat on the suction line leaving the evaporator, using suction pressure converted to saturation temperature; subcooling on the liquid line leaving the condenser, using liquid pressure converted to saturation temperature">
+        <rect width="800" height="300" fill="var(--color-surface-offset)"/>
+        <text x="400" y="30" text-anchor="middle" font-family="Space Grotesk" font-size="16" fill="var(--color-text)" font-weight="700">Where the Two Charging Numbers Come From</text>
+        <rect x="60" y="70" width="200" height="70" rx="8" fill="#0f8a8a"/>
+        <rect x="540" y="70" width="200" height="70" rx="8" fill="#c2410c"/>
+        <g font-family="Inter" font-size="13" fill="#ffffff" font-weight="600" text-anchor="middle">
+          <text x="160" y="100">Indoor coil</text><text x="160" y="120" font-size="11" font-weight="400">(evaporator)</text>
+          <text x="640" y="100">Outdoor unit</text><text x="640" y="120" font-size="11" font-weight="400">(condenser)</text>
+        </g>
+        <line x1="260" y1="90" x2="540" y2="90" stroke="var(--color-text)" stroke-width="5"/>
+        <line x1="260" y1="125" x2="540" y2="125" stroke="var(--color-text)" stroke-width="2.5"/>
+        <text x="400" y="82" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">suction line (large)</text>
+        <text x="400" y="142" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--color-text)">liquid line (small)</text>
+        <rect x="60" y="175" width="330" height="80" rx="6" fill="none" stroke="#0f8a8a" stroke-width="2"/>
+        <rect x="410" y="175" width="330" height="80" rx="6" fill="none" stroke="#c2410c" stroke-width="2"/>
+        <g font-family="Inter" font-size="12" fill="var(--color-text)">
+          <text x="75" y="198" font-weight="700">Superheat (fixed orifice)</text>
+          <text x="75" y="218">suction line temp minus</text>
+          <text x="75" y="236">saturation temp at suction pressure</text>
+          <text x="425" y="198" font-weight="700">Subcooling (TXV / EEV)</text>
+          <text x="425" y="218">saturation temp at liquid pressure</text>
+          <text x="425" y="236">minus liquid line temp</text>
+        </g>
+        <text x="400" y="285" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">Formulas as written on the ENERGY STAR National HVAC Commissioning Checklist. Always use the manufacturer's method and target.</text>
+      </svg>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>Split air conditioners and heat pumps leave the factory with refrigerant already inside. According to a <a href="https://www.aceee.org/wp-content/uploads/2026/08/finding-fault-an-investigation-of-the-prevalence.pdf" target="_blank" rel="noopener">2026 ACEEE paper</a> from Pacific Northwest National Laboratory and Proctor Engineering Group, that charge is typically sized for a line set of about 15 to 25 feet. Longer lines, a different indoor coil, or a leak all change what the system actually needs. The installer is supposed to confirm the final charge with measurements, not guesswork.</p>
+        <p><strong>Who this helps:</strong> homeowners who want to know what a proper charge check looks like, and technicians tightening up their charging routine.</p>
+
+        <h2>The three methods</h2>
+        <p><strong>Weigh-in:</strong> recover or start from a known amount and add refrigerant by weight on a digital scale, using the manufacturer’s per-foot adjustment for the line set. It works in any weather and is the starting point for every new install.</p>
+        <p><strong>Superheat:</strong> used on fixed-orifice (piston) systems. The <a href="https://www.energystar.gov/sites/default/files/2025-01/National%20HVAC%20Commissioning%20Checklist_Rev%2014.pdf" target="_blank" rel="noopener">ENERGY STAR National HVAC Commissioning Checklist</a> defines it as the suction line temperature minus the evaporator saturation temperature from the suction pressure. The target comes from the manufacturer’s superheat table, which uses the outdoor temperature and the return air reading.</p>
+        <p><strong>Subcooling:</strong> used on TXV and electronic expansion valve systems. It is the condenser saturation temperature from the liquid line pressure minus the actual liquid line temperature. The target is usually printed on the outdoor unit’s data plate or in the installation manual.</p>
+
+        <h2>The tolerances</h2>
+        <p>The <a href="https://www.energystar.gov/ia/home_improvement/downloads/ESQI_sponsor_guide.pdf" target="_blank" rel="noopener">ENERGY STAR HVAC Quality Installation guide</a>, which is based on ACCA Standard 5 (HVAC Quality Installation), requires charge to be checked with subcooling on TXV systems, superheat on fixed-orifice systems, or the method the manufacturer requires. Results must land within <strong>±3°F of the subcooling goal</strong> or <strong>±5°F of the superheat goal</strong>. The commissioning checklist adds that the system should run 15 minutes before testing.</p>
+
+        <h2>Tools for the job</h2>
+        <table>
+          <thead><tr><th>Tool</th><th>What it does</th><th>Common mistake</th></tr></thead>
+          <tbody>
+            <tr><td>Digital refrigerant scale</td><td>Weighs refrigerant in or out</td><td>Not zeroing with hoses attached, or skipping the line-set adder</td></tr>
+            <tr><td>Manifold gauges or wireless probes</td><td>Read suction and liquid pressures and convert them to saturation temperature</td><td>Wrong refrigerant profile selected</td></tr>
+            <tr><td>Pipe clamp thermometers</td><td>Read actual line temperatures</td><td>Poor contact or no insulation over the clamp in sun or wind</td></tr>
+            <tr><td>Thermometer or psychrometer</td><td>Outdoor and return air readings for superheat targets</td><td>Measuring in the wrong spot or before the system stabilizes</td></tr>
+          </tbody>
+        </table>
+        <p>For gauge accuracy and refrigerant profiles, see our guide to <a href="digital-vs-analog-manifold-gauges-accuracy-refrigerant-profiles-epa-section-608.html" target="_blank" rel="noopener">digital vs analog manifold gauges</a>.</p>
+
+        <h2>How often charge is wrong</h2>
+        <ul>
+          <li>A <a href="https://www.aceee.org/wp-content/uploads/proceedings-1980-2020/2004/SS04_Panel1_Paper19.pdf" target="_blank" rel="noopener">2004 ACEEE field study</a> of 4,168 air conditioners found about <strong>72% outside manufacturer tolerances</strong> for charge, and 44% had improper airflow. Undercharged non-TXV units needed charge additions averaging 16.7% of the factory charge.</li>
+          <li>The <a href="https://www.aceee.org/wp-content/uploads/2026/08/finding-fault-an-investigation-of-the-prevalence.pdf" target="_blank" rel="noopener">2026 ACEEE paper</a> tested 83 homes with systems installed in the past year. In homes from quality-installation programs, <strong>92%</strong> were charged correctly. In homes done to standard regional practice, only <strong>55%</strong> were. Most of the incorrect systems (77%) were undercharged.</li>
+          <li>A <a href="https://docs.nlr.gov/docs/fy24osti/88387.pdf" target="_blank" rel="noopener">2024 DOE Building America report by Southface Energy Institute</a> found 76.9% of 2,265 systems commissioned with an app-based diagnostic tool had correct charge.</li>
+          <li>The <a href="https://www.osti.gov/servlets/purl/1470985/" target="_blank" rel="noopener">U.S. Department of Energy literature review</a> found that across studies, 29 to 78% of systems were undercharged and 4 to 50% overcharged, depending on region and method.</li>
+        </ul>
+
+        <h2>What it costs</h2>
+        <p>In simulations of a split air conditioner, <a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=918239" target="_blank" rel="noopener">NIST</a> found annual energy use rose about 3%, 8%, and 16% for undercharges of 10%, 20%, and 30%. Using results from <a href="https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.1848.pdf" target="_blank" rel="noopener">NIST Technical Note 1848</a>, <a href="https://www.osti.gov/servlets/purl/1660191" target="_blank" rel="noopener">a national-lab analysis</a> reports that 20% and 30% overcharges raised heat pump energy use by about 4 to 7% and 10 to 14%. <a href="https://www.nist.gov/news-events/news/2014/11/underperforming-energy-efficiency-hvac-equipment-suffers-due-poor" target="_blank" rel="noopener">NIST</a> named refrigerant undercharge one of the most significant installation faults, after duct leakage. Systems with a TXV tolerate low charge better: the <a href="https://www.osti.gov/servlets/purl/1470985/" target="_blank" rel="noopener">U.S. Department of Energy literature review</a> notes their capacity and efficiency hold up until charge falls to around 70%.</p>
+
+        <div class="callout">
+          <p><strong>Charging in November:</strong> superheat and subcooling readings need warm outdoor conditions. The <a href="https://www.energystar.gov/ia/home_improvement/downloads/ESQI_sponsor_guide.pdf" target="_blank" rel="noopener">ENERGY STAR HVAC Quality Installation guide</a> says the outdoor temperature typically must be at least 55°F for superheat testing and 60°F for subcooling. In cold weather, weigh in the charge and follow the manufacturer’s cold-weather or heating-mode procedure, then recheck in spring.</p>
+        </div>
+
+        <h2>New refrigerants: read the right column</h2>
+        <p>R-454B, the most common R-410A replacement in new equipment, is a blend with a temperature glide of about 2°F, according to the refrigerant maker’s <a href="https://www.chemours.com/en/-/media/files/opteon/opteon-xl41-product-information.pdf?la=en" target="_blank" rel="noopener">product data sheet</a>. Its <a href="https://www.chemours.com/en/-/media/files/opteon/a2l/optxlptac-0522-printable.pdf" target="_blank" rel="noopener">pressure-temperature guide</a> lists separate saturated-vapor values for calculating superheat and saturated-liquid values for subcooling. Using one column for both builds in an error. Most digital gauges handle this when the correct refrigerant is selected.</p>
+
+        <h2>Limitations</h2>
+        <p>Superheat and subcooling only tell you something useful when the indoor airflow is right and the coils are clean. Low airflow can make a correctly charged system look overcharged or undercharged. Many of the field studies are from the Southwest, Florida, and California, so the exact percentages may differ in New Jersey. Ductless and variable-speed systems often use their own manufacturer procedures, which take priority over generic targets.</p>
+
+        <p><em>Not an endorsement: this article compares charging methods and tool types, not brands. HVAC Zone Inc is a multi-brand dealer, and the Hub is brand-neutral.</em></p>
+        <p>Want the charge on your system checked against the manufacturer’s target? <a href="../index.html#contact">Request a consultation</a> with HVAC Zone for a site-specific assessment.</p>
+      </div>
+
+      <!--SERVICE-HELP--><aside class="service-help" style="margin:var(--space-8) auto 0;max-width:var(--content-narrow,720px);padding:18px 20px;border:1px solid var(--color-border);border-left:4px solid var(--color-primary);border-radius:12px;background:var(--color-surface)">
+          <p style="margin:0;font-size:var(--text-sm)"><b style="display:block;font-size:var(--text-base);margin-bottom:4px;color:var(--color-text)">Need help with this at your home or building?</b>HVAC Zone handles repairs, replacements and maintenance in Newark, neighboring towns and Essex County. See <a href="../services/air-conditioning-repair-replacement.html">Air Conditioning services</a> or call <a href="tel:+19736876386">(973) 687-6386</a> (open 24/7).</p>
+        </aside><!--/SERVICE-HELP-->
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Tools</span><span class="tag">Tools</span><span class="tag">Refrigerant Charge</span><span class="tag">Superheat</span><span class="tag">Subcooling</span><span class="tag">Refrigerant Scales</span><span class="tag">R-454B</span><span class="tag">ENERGY STAR</span><span class="tag">ACCA 5 QI</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="digital-vs-analog-manifold-gauges-accuracy-refrigerant-profiles-epa-section-608.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Digital vs Analog Manifold Gauges: Accuracy, Refrigerant Profiles, and EPA Section 608 Compliance"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">PSI</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">gauges</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Digital vs Analog Manifold Gauges: Accuracy, Refrigerant Profiles, and EPA Section 608 Compliance</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="hvac-airflow-measurement-anemometers-flow-hoods-pitot-tube-ashrae-111.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="HVAC Airflow Measurement: Anemometers, Flow Hoods, and Pitot Tube Traverses"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">CFM</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">airflow</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">HVAC Airflow Measurement: Anemometers, Flow Hoods, and Pitot Tube Traverses</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="hvac-commissioning-tests-explained.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Tests Behind a Real HVAC Install: Commissioning Explained"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">QI</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">commissioning</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">The Tests Behind a Real HVAC Install: Commissioning Explained</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+            <img src="../img/hvac-zone-logo.png" alt="HVAC Zone Inc" class="brand-logo brand-logo--footer" width="56" height="44" />
+          </a>
+          <p>Heating and cooling repairs, replacements, maintenance, new installations and ductless systems in Newark, neighboring towns and Essex County, NJ.</p>
+          <p style="margin-top:var(--space-3)"><b style="color:var(--color-text)">HVAC Zone Inc</b><br /><a href="https://www.google.com/maps/search/?api=1&amp;query=142+Lincoln+Ave+Newark+NJ+07104" target="_blank" rel="noopener">142 Lincoln Ave, Newark, NJ 07104</a><br /><a href="tel:+19736876386">(973) 687-6386</a> · Open 24/7</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="../services/air-conditioning-repair-replacement.html">Air Conditioning</a></li>
+            <li><a href="../services/heating-repair-replacement.html">Heating (Furnaces &amp; Boilers)</a></li>
+            <li><a href="../services/heat-pumps-ductless.html">Heat Pumps &amp; Ductless</a></li>
+            <li><a href="../services/indoor-air-quality.html">Indoor Air Quality</a></li>
+            <li><a href="../index.html#pricing">Estimates &amp; Diagnostics</a></li>
+            <li><a href="../index.html#services">Light Commercial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul role="list">
+            <li><a href="../service-areas/newark-nj-hvac.html">Newark</a></li>
+            <li><a href="../service-areas/belleville-nj-hvac.html">Belleville</a></li>
+            <li><a href="../service-areas/bloomfield-nj-hvac.html">Bloomfield</a></li>
+            <li><a href="../service-areas/east-orange-nj-hvac.html">East Orange</a></li>
+            <li><a href="../service-areas/irvington-nj-hvac.html">Irvington</a></li>
+            <li><a href="../service-areas/harrison-nj-hvac.html">Harrison</a></li>
+            <li><a href="../service-areas/kearny-nj-hvac.html">Kearny</a></li>
+            <li><a href="../service-areas/hillside-nj-hvac.html">Hillside</a></li>
+            <li><a href="../index.html#service-area">All of Essex County</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../brands.html">Brands</a></li>
+            <li><a href="../hub.html">Information Hub</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="tel:+19736876386">(973) 687-6386</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor, Lic. #19HC00897200 · Licensed &amp; Insured</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
