@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manometers and Clocking the Gas Meter: How Techs Verify a Furnace Is Firing at the Right Rate | HVAC Zone</title>
+  <meta name="description" content="Setting manifold pressure with a manometer is only half the job. How clocking the gas meter confirms a furnace’s real Btu input, the math, and what a CPSC lab test found when pressure alone was used." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b4f8a'/%3E%3Cpath d='M8 12h16M8 16h12M8 20h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.hvaczonenj.com/articles/gas-furnace-manifold-pressure-manometer-clocking-gas-meter-input-rate-overfiring.html",
+  "name": "Manometers and Clocking the Gas Meter: How Techs Verify a Furnace Is Firing at the Right Rate",
+  "mainEntity": {
+    "@type": "Article",
+    "headline": "Manometers and Clocking the Gas Meter: How Techs Verify a Furnace Is Firing at the Right Rate",
+    "datePublished": "2026-11-17",
+    "dateModified": "2026-11-17",
+    "author": {
+      "@type": "Organization",
+      "name": "HVAC Zone Team",
+      "url": "https://www.hvaczonenj.com/hub.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HVAC Zone Inc",
+      "@id": "https://www.hvaczonenj.com/#business",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hvaczonenj.com/img/hvac-zone-logo.png"
+      }
+    }
+  }
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="url(#bg)"/>
+            <path d="M9 14h22M9 20h16M9 26h10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="30" cy="26" r="2.4" fill="#e07a1a"/>
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#0b4f8a"/><stop offset="1" stop-color="#072f54"/></linearGradient></defs>
+          </svg>
+          <span><span class="brand-name">HVAC<b>Zone</b></span><span class="brand-sub">NJ Master Contractor</span></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#service-area">Service Areas</a></li>
+          <li><a href="../brands.html">Brands</a></li>
+          <li><a href="../hub.html" class="is-active">Information Hub</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+          <a href="tel:+19736876386" class="btn btn--primary header-cta">Call 24/7</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-hero">
+      <div class="container container--prose">
+        <div class="article-meta">
+          <span class="badge cat-tag">Tools</span>
+          <div class="article-byline">
+            <span class="avatar">HZ</span>
+            <span><strong>HVAC Zone Team</strong> · November 17, 2026 · 7 min read</span>
+          </div>
+        </div>
+        <h1>Manometers and Clocking the Gas Meter: How Techs Verify a Furnace Is Firing at the Right Rate</h1>
+        <p class="article-lead">A furnace’s rating plate says how much gas it should burn. A manometer and a stopwatch at the gas meter tell you how much it actually burns. Here is how the two checks work together, and why a federal lab test showed that pressure alone can miss by 10%.</p>
+      </div>
+    </header>
+
+    <figure class="article-figure">
+      <svg viewBox="0 0 800 300" role="img" aria-label="Diagram showing a manometer measuring inlet and manifold pressure at the gas valve, and a stopwatch timing the gas meter test dial to calculate actual Btu input">
+        <rect width="800" height="300" fill="var(--color-surface-offset)"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Space Grotesk" font-size="16" fill="var(--color-text)" font-weight="700">Two Checks, One Answer: Actual Firing Rate</text>
+        <g font-family="Inter" text-anchor="middle">
+          <circle cx="120" cy="140" r="48" fill="none" stroke="var(--color-text)" stroke-width="3"/>
+          <line x1="120" y1="140" x2="150" y2="112" stroke="#c2410c" stroke-width="3"/>
+          <text x="120" y="210" font-size="13" fill="var(--color-text)" font-weight="700">Gas meter test dial</text>
+          <text x="120" y="228" font-size="11" fill="var(--color-text-muted)">time one revolution</text>
+          <path d="M168 140 L300 140" stroke="#64748b" stroke-width="10"/>
+          <rect x="300" y="110" width="110" height="60" rx="8" fill="#0f8a8a"/>
+          <text x="355" y="145" font-size="12" fill="#fff" font-weight="700">Gas valve</text>
+          <path d="M410 140 L520 140" stroke="#64748b" stroke-width="10"/>
+          <rect x="520" y="105" width="120" height="70" rx="8" fill="#c2410c"/>
+          <text x="580" y="145" font-size="12" fill="#fff" font-weight="700">Burners</text>
+          <line x1="320" y1="110" x2="300" y2="70" stroke="var(--color-text)" stroke-width="2"/>
+          <line x1="395" y1="110" x2="430" y2="70" stroke="var(--color-text)" stroke-width="2"/>
+          <text x="280" y="62" font-size="11" fill="var(--color-text)">Inlet tap</text>
+          <text x="450" y="62" font-size="11" fill="var(--color-text)">Manifold (outlet) tap</text>
+          <text x="355" y="210" font-size="13" fill="var(--color-text)" font-weight="700">Manometer</text>
+          <text x="355" y="228" font-size="11" fill="var(--color-text-muted)">pressure in inches w.c.</text>
+          <text x="690" y="135" font-size="13" fill="var(--color-text)" font-weight="700">CFH x Btu/ft3</text>
+          <text x="690" y="155" font-size="11" fill="var(--color-text-muted)">= actual input</text>
+        </g>
+        <text x="400" y="285" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">HVAC Zone illustration. Always follow the appliance installation instructions.</text>
+      </svg>
+    </figure>
+
+    <article class="section section--tight">
+      <div class="prose">
+        <p>Every gas furnace has a rating plate that lists its input in Btu per hour, which is how much gas it is designed to burn. Whether it actually burns that amount depends on gas pressure, orifice size, and the heat content of the gas your utility delivers. Two simple tools check this: a manometer and a stopwatch.</p>
+        <p><strong>Who this helps:</strong> homeowners who want to know what a proper furnace startup or tune-up should include, and technicians who want to review the method.</p>
+
+        <h2>Tool 1: the manometer</h2>
+        <p>A manometer measures gas pressure in inches of water column (w.c.). Techs connect it to the inlet tap ahead of the gas valve to read supply pressure, and to the outlet (manifold) tap after the valve to read the pressure feeding the burners. According to <a href="https://www.achrnews.com/articles/154304-beginners-guide-to-combustion-and-analysis" target="_blank" rel="noopener">ACHR News</a>, typical natural gas manifold readings fall around 3.2 to 3.8 inches w.c. The correct value is the one on the furnace’s data plate, and the reading depends on which stage the valve is firing. The same article notes that too much or too little gas can cause carbon monoxide, and that a furnace tripping its high limit can be a sign the gas valve was never set up correctly.</p>
+
+        <h2>Tool 2: the gas meter and a stopwatch</h2>
+        <p>Pressure alone doesn’t prove the firing rate. Clocking the meter does. As <a href="https://www.hvacrschool.com/clocking-a-gas-meter-its-not-that-hard/" target="_blank" rel="noopener">HVAC School</a> explains, you shut off every other gas appliance and pilot, run the furnace at high fire until it settles, then time one full revolution of the meter’s smallest test dial. Then:</p>
+        <ul>
+          <li><strong>Cubic feet per hour (CFH)</strong> = 3,600 × dial size (cubic feet) ÷ seconds per revolution</li>
+          <li><strong>Actual input (Btu/h)</strong> = CFH × heat content of the gas (Btu per cubic foot)</li>
+        </ul>
+        <p>For example, a ½-cubic-foot dial that turns once every 22 seconds gives about 81.8 CFH. At 1,000 Btu per cubic foot, that’s roughly 81,800 Btu/h. HVAC School recommends checking manifold pressure and orifice size if the result is off from the rating plate by more than a couple of percent. It also notes that meters supplied at 2 psi need a pressure correction, or they will read about 14% low.</p>
+
+        <h2>Why the heat content matters</h2>
+        <p>Natural gas isn’t exactly 1,000 Btu per cubic foot. The <a href="https://www.eia.gov/tools/faqs/faq.php?id=45&t=5" target="_blank" rel="noopener">U.S. Energy Information Administration</a> says the 2023 U.S. average for gas delivered to customers was about 1,038 Btu per cubic foot, and that it varies by location and over time. Some utilities print the number on the bill. Using the right figure changes the result by a few percent, about the same size as the tolerance techs are trying to hit.</p>
+
+        <h2>What a federal lab test found</h2>
+        <p>In a furnace test by the <a href="https://www.cpsc.gov/s3fs-public/pdfs/CO_emissions_furnace1.pdf" target="_blank" rel="noopener">Consumer Product Safety Commission</a>, the installation instructions told the installer to clock the meter and to set manifold pressure to 3.5 inches w.c., without saying which step takes priority. When staff set the pressure to 3.5 inches, the 100,000 Btu/h furnace actually fired at about 110,000 Btu/h, roughly 10% over. With an intact vent, CO stayed under 3 ppm. With a fully blocked vent, the highest CO measured was 6 ppm at the rated input and 331 ppm at 110,000 Btu/h. The <a href="https://www.cpsc.gov/s3fs-public/pdfs/CO_emissions_furnace1.pdf" target="_blank" rel="noopener">same CPSC report</a> also noted that the flame looked the same even at 23% overfire, so you can’t judge firing rate by eye.</p>
+
+        <div class="callout">
+          <p><strong>Key takeaway:</strong> the manometer sets the pressure, and clocking the meter confirms the input. A blue flame and a “normal” pressure reading don’t prove a furnace is firing at its rated input. Pair these checks with combustion analysis and CO testing.</p>
+        </div>
+
+        <h2>Startup checklist</h2>
+        <table>
+          <thead><tr><th>Check</th><th>Tool</th><th>What to compare against</th></tr></thead>
+          <tbody>
+            <tr><td>Inlet (supply) pressure, burners firing</td><td>Manometer</td><td>Inlet range in the installation instructions</td></tr>
+            <tr><td>Manifold pressure, each stage</td><td>Manometer</td><td>Data plate or installation instructions</td></tr>
+            <tr><td>Actual input at high fire</td><td>Gas meter and stopwatch</td><td>Rating plate input, using the utility’s heat content</td></tr>
+            <tr><td>Meter delivery pressure</td><td>Meter tag or utility</td><td>Apply a pressure correction if above standard low pressure</td></tr>
+            <tr><td>Combustion and CO</td><td>Combustion analyzer</td><td>Manufacturer limits and local code</td></tr>
+            <tr><td>Leak check after removing test plugs</td><td>Leak solution or detector</td><td>No leaks at the taps</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Limitations</h2>
+        <p>Clocking only works when no other gas appliance is drawing from the meter, and it isn’t practical on some commercial or electronic meters. High altitude and propane systems have their own pressure and orifice requirements. Gas valve adjustments should be made only by a qualified technician following the installation instructions and local fuel gas code. This is not a do-it-yourself task.</p>
+
+        <p><em>Not an endorsement: this article compares methods and tools by function. No manometer, meter, or furnace brand is recommended. HVAC Zone Inc is a multi-brand dealer, and the Hub is brand-neutral.</em></p>
+        <p>Not sure your furnace was set up to its rated input? <a href="../index.html#contact">Request a consultation</a> with HVAC Zone for a site-specific startup or combustion check.</p>
+      </div>
+
+      <!--SERVICE-HELP--><aside class="service-help" style="margin:var(--space-8) auto 0;max-width:var(--content-narrow,720px);padding:18px 20px;border:1px solid var(--color-border);border-left:4px solid var(--color-primary);border-radius:12px;background:var(--color-surface)">
+          <p style="margin:0;font-size:var(--text-sm)"><b style="display:block;font-size:var(--text-base);margin-bottom:4px;color:var(--color-text)">Need help with this at your home or building?</b>HVAC Zone handles repairs, replacements and maintenance in Newark, neighboring towns and Essex County. See <a href="../services/heating-repair-replacement.html">Heating (Furnaces &amp; Boilers) services</a> or call <a href="tel:+19736876386">(973) 687-6386</a> (open 24/7).</p>
+        </aside><!--/SERVICE-HELP-->
+
+      <div class="article-foot">
+        <div class="tag-row">
+          <span class="tag">Tools</span><span class="tag">HVAC Tools</span><span class="tag">Gas Furnace</span><span class="tag">Manometer</span><span class="tag">Gas Pressure</span><span class="tag">Clocking the Meter</span><span class="tag">Combustion Safety</span><span class="tag">Heating Season</span>
+        </div>
+      </div>
+    </article>
+
+    <section class="related section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Keep reading</span>
+          <h2>Related from the hub</h2>
+        </div>
+        <div class="article-grid">
+          <a href="combustion-analyzer-hvac-flue-gas-testing-furnace-efficiency.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Combustion Analyzers: How Flue Gas Testing Reveals Furnace Efficiency and Safety"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">O2</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">flue gas</text></svg>
+              <span class="card-cat">Tools</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Combustion Analyzers: How Flue Gas Testing Reveals Furnace Efficiency and Safety</h3><div class="card-meta"><span>8 min read</span></div></div>
+          </a>
+          <a href="carbon-monoxide-combustion-safety-hvac-checks.html" class="card" data-cat="tools">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Carbon Monoxide & Combustion Safety: The HVAC Checks That Matter"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">CO</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">safety</text></svg>
+              <span class="card-cat">Combustion Safety</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Carbon Monoxide & Combustion Safety: The HVAC Checks That Matter</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+          <a href="single-stage-vs-two-stage-vs-modulating-gas-furnace-comfort-energy-ecm-blower-field-data.html" class="card" data-cat="equipment">
+            <div class="card-media">
+              <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Single-Stage vs. Two-Stage vs. Modulating Gas Furnaces: What the Test and Field Data Actually Show"><rect width="400" height="225" fill="var(--color-surface-offset)"/><rect x="130" y="60" width="140" height="100" rx="8" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="2.5"/><text x="200" y="105" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="var(--color-primary)" font-weight="700">1-2-M</text><text x="200" y="125" text-anchor="middle" font-family="Inter" font-size="10" fill="var(--color-text-muted)">stages</text></svg>
+              <span class="card-cat">Equipment</span>
+            </div>
+            <div class="card-body"><h3 class="card-title">Single-Stage vs. Two-Stage vs. Modulating Gas Furnaces: What the Test and Field Data Actually Show</h3><div class="card-meta"><span>7 min read</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" aria-label="HVAC Zone home">
+            <img src="../img/hvac-zone-logo.png" alt="HVAC Zone Inc" class="brand-logo brand-logo--footer" width="56" height="44" />
+          </a>
+          <p>Heating and cooling repairs, replacements, maintenance, new installations and ductless systems in Newark, neighboring towns and Essex County, NJ.</p>
+          <p style="margin-top:var(--space-3)"><b style="color:var(--color-text)">HVAC Zone Inc</b><br /><a href="https://www.google.com/maps/search/?api=1&amp;query=142+Lincoln+Ave+Newark+NJ+07104" target="_blank" rel="noopener">142 Lincoln Ave, Newark, NJ 07104</a><br /><a href="tel:+19736876386">(973) 687-6386</a> · Open 24/7</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="../services/air-conditioning-repair-replacement.html">Air Conditioning</a></li>
+            <li><a href="../services/heating-repair-replacement.html">Heating (Furnaces &amp; Boilers)</a></li>
+            <li><a href="../services/heat-pumps-ductless.html">Heat Pumps &amp; Ductless</a></li>
+            <li><a href="../services/indoor-air-quality.html">Indoor Air Quality</a></li>
+            <li><a href="../index.html#pricing">Estimates &amp; Diagnostics</a></li>
+            <li><a href="../index.html#services">Light Commercial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul role="list">
+            <li><a href="../service-areas/newark-nj-hvac.html">Newark</a></li>
+            <li><a href="../service-areas/belleville-nj-hvac.html">Belleville</a></li>
+            <li><a href="../service-areas/bloomfield-nj-hvac.html">Bloomfield</a></li>
+            <li><a href="../service-areas/east-orange-nj-hvac.html">East Orange</a></li>
+            <li><a href="../service-areas/irvington-nj-hvac.html">Irvington</a></li>
+            <li><a href="../service-areas/harrison-nj-hvac.html">Harrison</a></li>
+            <li><a href="../service-areas/kearny-nj-hvac.html">Kearny</a></li>
+            <li><a href="../service-areas/hillside-nj-hvac.html">Hillside</a></li>
+            <li><a href="../index.html#service-area">All of Essex County</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../brands.html">Brands</a></li>
+            <li><a href="../hub.html">Information Hub</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="tel:+19736876386">(973) 687-6386</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 HVAC Zone Inc · NJ Master HVACR Contractor, Lic. #19HC00897200 · Licensed &amp; Insured</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
